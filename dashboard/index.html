@@ -1,101 +1,112 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap">
 <style>
-/* Layout: a header band, a row of totals, a requirement strip, then the wide
-   staff table. Mid-tone surfaces throughout — a soft blue-grey ground rather
-   than white, navy-tinted charcoal rather than black, so a long reading
-   session over 94 rows stays comfortable. Palette taken from the PlusOne
-   Mentoring site: navy #06316a, blue #0274bd, rose #cc3366. */
+/* Layout: headline totals, then three category cards, then the detail — the
+   per-requirement table and the staff register, both of which stay folded away
+   until asked for. Mid-tone surfaces throughout: a soft blue-grey ground
+   rather than white, navy-tinted charcoal rather than black, so reading
+   ninety-odd rows stays comfortable. Palette from the PlusOne Mentoring site:
+   navy #06316a, blue #0274bd, rose #cc3366. */
 .po {
-  --brand:      #06316a;
-  --brand-2:    #0274bd;
-  --accent:     #cc3366;
-
-  --bg:         #e9eef5;
-  --surface:    #f5f8fc;
-  --surface-2:  #dde5f0;
-  --fg:         #1d2838;
-  --muted:      #56677f;
-  --line:       #c6d2e2;
-
-  --ok:         #2d7d57;
-  --warn:       #b4761a;
-  --bad:        #b53a2d;
-  --review:     #2f6fb0;
-  --gone:       #6f7f96;
-
+  --brand: #06316a; --brand-2: #0274bd; --accent: #cc3366;
+  --bg: #e9eef5; --surface: #f5f8fc; --surface-2: #dde5f0;
+  --fg: #1d2838; --muted: #56677f; --line: #c6d2e2;
+  --ok: #2d7d57; --warn: #b4761a; --bad: #b53a2d; --review: #2f6fb0; --gone: #6f7f96;
   --display: "Poppins", "Segoe UI", system-ui, sans-serif;
   --body: "Open Sans", -apple-system, "Segoe UI", system-ui, sans-serif;
-
-  background: var(--bg);
-  color: var(--fg);
-  font-family: var(--body);
-  font-size: 14px;
-  line-height: 1.5;
-  padding-block: 20px 36px;
+  background: var(--bg); color: var(--fg); font-family: var(--body);
+  font-size: 14px; line-height: 1.5; padding-block: 20px 40px;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .po {
-    --bg:        #1c2533;
-    --surface:   #243041;
-    --surface-2: #2c3a4d;
-    --fg:        #dde6f1;
-    --muted:     #94a6bd;
-    --line:      #3a4a60;
-    --brand:     #8fbce8;
-    --brand-2:   #58a5dc;
-    --accent:    #ef8fb1;
-    --ok:        #57bd87;
-    --warn:      #dda046;
-    --bad:       #e8796b;
-    --review:    #79b2e8;
-    --gone:      #8a9bb2;
-    color-scheme: dark;
-  }
-}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .po {
+  --bg: #1c2533; --surface: #243041; --surface-2: #2c3a4d;
+  --fg: #dde6f1; --muted: #94a6bd; --line: #3a4a60;
+  --brand: #8fbce8; --brand-2: #58a5dc; --accent: #ef8fb1;
+  --ok: #57bd87; --warn: #dda046; --bad: #e8796b; --review: #79b2e8; --gone: #8a9bb2;
+  color-scheme: dark; } }
 :root[data-theme="dark"] .po {
-  --bg:        #1c2533;
-  --surface:   #243041;
-  --surface-2: #2c3a4d;
-  --fg:        #dde6f1;
-  --muted:     #94a6bd;
-  --line:      #3a4a60;
-  --brand:     #8fbce8;
-  --brand-2:   #58a5dc;
-  --accent:    #ef8fb1;
-  --ok:        #57bd87;
-  --warn:      #dda046;
-  --bad:       #e8796b;
-  --review:    #79b2e8;
-  --gone:      #8a9bb2;
-  color-scheme: dark;
-}
+  --bg: #1c2533; --surface: #243041; --surface-2: #2c3a4d;
+  --fg: #dde6f1; --muted: #94a6bd; --line: #3a4a60;
+  --brand: #8fbce8; --brand-2: #58a5dc; --accent: #ef8fb1;
+  --ok: #57bd87; --warn: #dda046; --bad: #e8796b; --review: #79b2e8; --gone: #8a9bb2;
+  color-scheme: dark; }
 
 .po * { box-sizing: border-box; }
-.po-wrap { max-width: 1400px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+.po-wrap { max-width: 1400px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
 
-.po-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 16px; }
+.po-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; }
 .po-title { font-family: var(--display); font-weight: 700; font-size: clamp(20px, 3vw, 27px);
   letter-spacing: -0.02em; margin: 0; color: var(--brand); text-wrap: balance; }
 .po-sub { color: var(--muted); font-size: 13px; margin: 0; }
-.po-rule { height: 3px; border-radius: 2px; background: linear-gradient(90deg, var(--brand), var(--brand-2) 55%, var(--accent)); }
+.po-spacer { flex: 1 1 auto; }
+.po-rule { height: 3px; border-radius: 2px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-2) 55%, var(--accent)); }
 
-.po-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.po-btn { font: inherit; font-size: 12.5px; font-family: var(--display); font-weight: 600;
+  color: var(--brand-2); background: var(--surface); border: 1px solid var(--line);
+  border-radius: 7px; padding: 6px 12px; cursor: pointer; display: inline-flex;
+  align-items: center; gap: 7px; }
+.po-btn:hover { background: var(--surface-2); }
+.po-btn:focus-visible { outline: 2px solid var(--brand-2); outline-offset: 2px; }
+.po-btn[disabled] { opacity: 0.55; cursor: default; }
+.po-spin { width: 11px; height: 11px; border-radius: 50%; border: 2px solid var(--line);
+  border-top-color: var(--brand-2); display: inline-block; }
+.po-btn.is-busy .po-spin { animation: po-rot 0.7s linear infinite; }
+@keyframes po-rot { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .po-btn.is-busy .po-spin { animation: none; } }
+
+.po-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(148px, 1fr)); gap: 11px; }
 .po-tile { background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
-  padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
-.po-tile-n { font-family: var(--display); font-weight: 600; font-size: 28px; line-height: 1.1;
+  padding: 13px 15px; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.po-tile-n { font-family: var(--display); font-weight: 600; font-size: 27px; line-height: 1.1;
   font-variant-numeric: tabular-nums; }
 .po-tile-l { font-size: 12px; color: var(--muted); }
-.po-tile.is-bad  .po-tile-n { color: var(--bad); }
+.po-tile.is-bad .po-tile-n { color: var(--bad); }
 .po-tile.is-warn .po-tile-n { color: var(--warn); }
-.po-tile.is-rev  .po-tile-n { color: var(--review); }
+.po-tile.is-rev .po-tile-n { color: var(--review); }
+
+.po-banner { margin: 0; font-size: 12.5px; background: var(--surface); border: 1px solid var(--line);
+  border-left: 3px solid var(--accent); border-radius: 8px; padding: 11px 14px; line-height: 1.55; }
+.po-banner b { font-family: var(--display); font-weight: 600; }
+
+.po-cats { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 13px; }
+.po-cat { background: var(--surface); border: 1px solid var(--line); border-radius: 11px;
+  padding: 16px 17px; display: flex; flex-direction: column; gap: 11px; min-width: 0; }
+.po-cat-t { font-family: var(--display); font-weight: 600; font-size: 15px; margin: 0; }
+.po-cat-b { font-size: 12px; color: var(--muted); margin: 0; }
+.po-cat-big { display: flex; align-items: baseline; gap: 8px; }
+.po-cat-n { font-family: var(--display); font-weight: 700; font-size: 32px; line-height: 1;
+  font-variant-numeric: tabular-nums; color: var(--ok); }
+.po-cat-of { font-size: 12.5px; color: var(--muted); }
+.po-cat-list { display: flex; flex-direction: column; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.po-cat-row { display: flex; justify-content: space-between; gap: 10px; font-size: 12.5px; }
+.po-cat-row span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.po-cat-ex { font-size: 11.5px; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 8px; }
 
 .po-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; min-width: 0; }
+.po-card > summary { padding: 13px 16px; cursor: pointer; font-family: var(--display);
+  font-weight: 600; font-size: 15px; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+.po-card > summary::marker { color: var(--muted); }
+.po-card > summary:focus-visible { outline: 2px solid var(--brand-2); outline-offset: -2px; }
+.po-card-n { font-size: 12px; color: var(--muted); font-family: var(--body); font-weight: 400; }
 .po-card-h { padding: 13px 16px; border-bottom: 1px solid var(--line); display: flex;
   flex-wrap: wrap; gap: 6px 14px; align-items: baseline; }
 .po-card-t { font-family: var(--display); font-weight: 600; font-size: 15px; margin: 0; }
-.po-card-n { font-size: 12px; color: var(--muted); }
+
+.po-controls { display: flex; flex-wrap: wrap; gap: 8px 10px; padding: 0 16px 13px; align-items: center; }
+.po-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.po-chip { font: inherit; font-size: 12px; background: var(--surface-2); color: var(--fg);
+  border: 1px solid var(--line); border-radius: 999px; padding: 4px 11px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 5px; }
+.po-chip:hover { border-color: var(--brand-2); }
+.po-chip:focus-visible { outline: 2px solid var(--brand-2); outline-offset: 2px; }
+.po-chip[aria-pressed="true"] { background: var(--brand); color: #fff; border-color: var(--brand); }
+:root[data-theme="dark"] .po-chip[aria-pressed="true"],
+.po-chip[aria-pressed="true"] { color: var(--bg); }
+.po-chip b { font-variant-numeric: tabular-nums; font-weight: 600; }
+.po-search { font: inherit; font-size: 12.5px; padding: 5px 10px; border-radius: 7px;
+  border: 1px solid var(--line); background: var(--surface-2); color: var(--fg); min-width: 0; flex: 1 1 160px; }
+.po-search:focus-visible { outline: 2px solid var(--brand-2); outline-offset: 1px; }
 
 .po-scroll { overflow-x: auto; }
 .po-table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
@@ -112,31 +123,28 @@
 .po-track { font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted);
   font-weight: 400; display: block; margin-top: 2px; }
 .po-num { font-variant-numeric: tabular-nums; text-align: right; }
-.po-notes { white-space: normal; min-width: 240px; max-width: 420px; color: var(--muted); font-size: 11.5px; }
+.po-notes { white-space: normal; min-width: 230px; max-width: 420px; color: var(--muted); font-size: 11.5px; }
 
 .po-s-ok { color: var(--ok); } .po-s-warn { color: var(--warn); } .po-s-bad { color: var(--bad); }
 .po-s-rev { color: var(--review); } .po-s-gone { color: var(--gone); }
 
 .po-score { display: inline-flex; align-items: center; gap: 7px; }
-.po-meter { width: 46px; height: 6px; border-radius: 3px; background: var(--surface-2); overflow: hidden; flex: none; }
+.po-meter { width: 44px; height: 6px; border-radius: 3px; background: var(--surface-2); overflow: hidden; flex: none; }
 .po-meter i { display: block; height: 100%; background: var(--brand-2); }
 
-.po-bar { display: flex; height: 16px; border-radius: 4px; overflow: hidden; background: var(--surface-2); min-width: 120px; }
+.po-bar { display: flex; height: 15px; border-radius: 4px; overflow: hidden;
+  background: var(--surface-2); min-width: 110px; }
 .po-bar span { display: block; }
-.po-legend { display: flex; flex-wrap: wrap; gap: 5px 14px; font-size: 11.5px; color: var(--muted); padding: 11px 16px 0; }
+.po-legend { display: flex; flex-wrap: wrap; gap: 5px 14px; font-size: 11.5px; color: var(--muted);
+  padding: 11px 16px 0; }
 .po-legend b { font-weight: 600; color: var(--fg); }
 .po-key { display: inline-flex; align-items: center; gap: 5px; }
 .po-dot { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
 
-.po-banner { margin: 0; font-size: 12.5px; color: var(--fg); background: var(--surface);
-  border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px;
-  padding: 11px 14px; line-height: 1.55; }
-.po-banner b { font-family: var(--display); font-weight: 600; }
-
 .po-note { font-size: 12px; color: var(--muted); padding: 11px 16px; border-top: 1px solid var(--line);
   background: var(--surface-2); border-radius: 0 0 9px 9px; }
 .po-note strong { color: var(--fg); font-weight: 600; }
-.po-ph { padding: 26px 16px; color: var(--muted); font-size: 13px; }
+.po-ph { padding: 24px 16px; color: var(--muted); font-size: 13px; }
 
 @media (max-width: 560px) {
   .po-name { position: static; }
@@ -145,9 +153,13 @@
 </style>
 
 <div class="po"><div class="po-wrap">
-  <header class="po-head" id="header">
+  <header class="po-head">
     <h1 class="po-title">Staff Compliance</h1>
     <p class="po-sub" id="asof">PlusOne Mentoring · NDIS provider 4050002983</p>
+    <span class="po-spacer"></span>
+    <button class="po-btn" id="refresh" type="button">
+      <span class="po-spin" aria-hidden="true"></span><span id="refresh-label">Reload data</span>
+    </button>
   </header>
   <div class="po-rule"></div>
 
@@ -155,40 +167,54 @@
 
   <p class="po-banner" id="systemic" hidden></p>
 
-  <section class="po-card" id="requirements">
-    <div class="po-card-h">
-      <h2 class="po-card-t">Status by requirement</h2>
-      <span class="po-card-n">One-time requirements are verified by document and date; renewal requirements are tracked to expiry.</span>
-    </div>
+  <section id="cat-section">
+    <h2 class="po-card-t" style="margin:0 0 11px">Compliance by category</h2>
+    <div class="po-cats" id="cats"></div>
+  </section>
+
+  <details class="po-card" id="requirements">
+    <summary>Every requirement in detail <span class="po-card-n">Ten requirements, status by status</span></summary>
     <div class="po-legend" id="legend"></div>
     <div class="po-scroll"><table class="po-table" id="req-table"></table></div>
-  </section>
+  </details>
 
   <section class="po-card" id="staff">
     <div class="po-card-h">
       <h2 class="po-card-t">Staff register</h2>
       <span class="po-card-n" id="staff-count"></span>
     </div>
+    <div class="po-controls">
+      <div class="po-chips" id="filters"></div>
+      <input class="po-search" id="search" type="search" placeholder="Find a staff member" aria-label="Find a staff member">
+      <button class="po-btn" id="cols" type="button">Show all requirements</button>
+    </div>
     <div class="po-scroll"><table class="po-table" id="staff-table"></table></div>
     <p class="po-note"><strong>🔍 Requires review is not a failure.</strong> It means the record is
     incomplete — most often an expiry date that was never entered, or a document that could not be
     verified. <strong>A 100-point total below 100 means the identification evidence is not on file</strong>,
-    not that identity was never verified.</p>
+    not that identity was never verified. <strong>The compliance score counts only the
+    requirements actually tracked</strong> — the organisation-wide gaps named above are left out,
+    so a staff member compliant on everything recorded shows 100%.</p>
   </section>
 </div></div>
 
 <script>
-/* Column order for the staff register. One-time requirements are grouped
-   together and labelled, so a completion date is never misread as an overdue
-   renewal. */
+/* Column sets and shared vocabulary. The register opens on the summary view —
+   four category columns instead of ten requirement columns — because the full
+   grid is for drilling into one person, not for scanning ninety-three. */
 window.PO = (function () {
   const ONE_TIME = ['NDIS Worker Orientation', 'Police Check', 'Infection Control'];
   const RENEWAL = ['NDIS Worker Check', 'WWCC', "Driver's Licence", 'First Aid', 'CPR',
                    'Vehicle Registration', 'Vehicle Insurance'];
-  const COLS = ['Staff Name', 'Status', ...ONE_TIME, ...RENEWAL, '100 Point ID Status',
-                'Compliance Score (%)', 'Expiry Alerts', 'Follow-up Required', 'Notes'];
-  const NUMERIC = new Set(['Compliance Score (%)', 'Total ID Points']);
+  const CATEGORY_COLS = ['Screening & Checks', 'Training & Certification', 'Driving & Vehicle'];
+  const TAIL = ['100 Point ID Status', 'Compliance Score (%)', 'Follow-up Required', 'Notes'];
 
+  const SUMMARY_COLS = ['Staff Name', 'Status', ...CATEGORY_COLS, ...TAIL];
+  const FULL_COLS = ['Staff Name', 'Status', ...ONE_TIME, ...RENEWAL,
+                     '100 Point ID Status', 'Compliance Score (%)', 'Expiry Alerts',
+                     'Follow-up Required', 'Notes'];
+
+  const NUMERIC = new Set(['Compliance Score (%)', 'Total ID Points']);
   const STATUS_CLASS = { '✅': 'po-s-ok', '⚠️': 'po-s-warn', '❌': 'po-s-bad', '🔍': 'po-s-rev', '⬜': 'po-s-gone' };
   const STATUS_VAR = { '✅': 'ok', '⚠️': 'warn', '❌': 'bad', '🔍': 'review', '⬜': 'gone' };
   const STATUS_NAME = { '✅': 'Compliant', '⚠️': 'Expiring soon', '❌': 'Expired',
@@ -200,7 +226,38 @@ window.PO = (function () {
     for (const g of Object.keys(STATUS_CLASS)) if (s.startsWith(g)) return g;
     return null;
   };
-  return { ONE_TIME, RENEWAL, COLS, NUMERIC, STATUS_CLASS, STATUS_VAR, STATUS_NAME, ORDER, glyphOf };
+  /**
+   * Requirement cells on a row, excluding the organisation-wide gaps.
+   *
+   * Without that exclusion the "Missing" filter returns every staff member,
+   * because CPR and Vehicle Insurance are unrecorded for all of them — a
+   * filter that selects everyone selects nothing useful. `skip` is the set of
+   * requirement labels the tally has identified as organisation-wide.
+   */
+  const requirementCells = (row, skip) => [...ONE_TIME, ...RENEWAL]
+    .filter((c) => !(skip && skip.has(c)))
+    .map((c) => row[c])
+    .filter((v) => v != null);
+
+  const anyStatus = (glyph) => (r, ctx) =>
+    requirementCells(r, ctx && ctx.systemic).some((v) => glyphOf(v) === glyph);
+
+  const FILTERS = [
+    { key: 'all',       label: 'All staff',        test: () => true },
+    { key: 'followup',  label: 'Needs follow-up',  test: (r) => r['Follow-up Required'] === 'Yes' },
+    { key: 'expired',   label: 'Expired',          test: anyStatus('❌') },
+    { key: 'expiring',  label: 'Expiring soon',    test: anyStatus('⚠️') },
+    { key: 'missing',   label: 'Missing',          test: anyStatus('⬜') },
+    { key: 'review',    label: 'Requires review',  test: anyStatus('🔍') },
+    // Matches the tile: staff who filed some identification but fall short.
+    // Staff with nothing on file are an organisation-wide gap, not an
+    // individual shortfall, and are already covered by the banner.
+    { key: 'id',        label: '100-point ID',     test: (r) =>
+        r['Meets 100 Point Requirement'] === 'No' && Number(r['Total ID Points']) > 0 },
+  ];
+
+  return { ONE_TIME, RENEWAL, CATEGORY_COLS, SUMMARY_COLS, FULL_COLS, NUMERIC,
+           STATUS_CLASS, STATUS_VAR, STATUS_NAME, ORDER, FILTERS, glyphOf, requirementCells };
 })();
 </script>
 
@@ -210,13 +267,13 @@ window.PO = (function () {
 dash.calc('total_staff', {
   inputs: ['staff_compliance'],
   title: 'Staff reviewed',
-  description: 'Number of staff records reviewed (Active and Onboarding).',
+  description: 'Staff records reviewed (Active and Onboarding), excluding test records.',
   fn: (staff) => staff.length,
 });
 dash.calc('total_followup', {
   inputs: ['staff_compliance'],
   title: 'Staff requiring follow-up',
-  description: 'Staff with at least one expired, expiring, missing or unverified requirement.',
+  description: 'Staff with at least one expired, expiring, missing or unverified requirement, excluding the organisation-wide gaps that affect nearly everyone.',
   fn: (staff) => staff.filter((r) => r['Follow-up Required'] === 'Yes').length,
 });
 dash.calc('total_expired', {
@@ -239,8 +296,8 @@ dash.calc('total_no_expiry', {
 });
 dash.calc('total_id_short', {
   inputs: ['staff_compliance'],
-  title: '100-point ID not evidenced',
-  description: 'Staff with some identification filed but under 100 points, or with no Primary document. Counts only staff who have filed something, since a staff member with nothing on file is an organisation-wide gap rather than an individual one. A shortfall means the evidence is not filed, not that identity was unverified.',
+  title: '100-point ID incomplete',
+  description: 'Staff with some identification filed but under 100 points, or with no Primary document. A shortfall means the evidence is not filed, not that identity was unverified.',
   fn: (staff) => staff.filter((r) =>
     r['Meets 100 Point Requirement'] === 'No' && Number(r['Total ID Points']) > 0).length,
 });
@@ -248,7 +305,9 @@ dash.calc('total_id_short', {
 
 <script>
 (function () {
-  const { COLS, NUMERIC, STATUS_CLASS, STATUS_VAR, STATUS_NAME, ORDER, ONE_TIME, glyphOf } = window.PO;
+  const PO = window.PO;
+  const { NUMERIC, STATUS_CLASS, STATUS_VAR, STATUS_NAME, ORDER, ONE_TIME, RENEWAL,
+          CATEGORY_COLS, SUMMARY_COLS, FULL_COLS, FILTERS, glyphOf } = PO;
   const $ = (id) => document.getElementById(id);
   const clear = (el) => { while (el.firstChild) el.removeChild(el.firstChild); };
   const el = (tag, cls, text) => {
@@ -260,6 +319,9 @@ dash.calc('total_id_short', {
 
   let sortCol = 'Staff Name';
   let sortDir = 1;
+  let filterKey = 'all';
+  let search = '';
+  let showAllCols = false;
 
   const TILES = [
     { id: 'total_staff',     label: 'Staff reviewed',            mood: '' },
@@ -267,7 +329,7 @@ dash.calc('total_id_short', {
     { id: 'total_expired',   label: 'Have an expired item',      mood: 'is-bad' },
     { id: 'total_expiring',  label: 'Expiring within 90 days',   mood: 'is-warn' },
     { id: 'total_no_expiry', label: 'Renewal date not recorded', mood: 'is-rev' },
-    { id: 'total_id_short',  label: '100-point ID incomplete',    mood: 'is-rev' },
+    { id: 'total_id_short',  label: '100-point ID incomplete',   mood: 'is-rev' },
   ];
 
   function renderTotals() {
@@ -280,6 +342,99 @@ dash.calc('total_id_short', {
       n.setAttribute('data-source', t.id);
       card.appendChild(n);
       card.appendChild(el('div', 'po-tile-l', t.label));
+      wrap.appendChild(card);
+    }
+  }
+
+  /** Requirement labels unrecorded for at least 80% of staff. */
+  function systemicLabels() {
+    const d = dash.data('requirement_tally');
+    if (d.status !== 'ok') return new Set();
+    const total = (row) => ['Compliant', 'Expiring Soon', 'Expired', 'Requires Review', 'Missing']
+      .reduce((a, c) => a + (+row[c] || 0), 0);
+    return new Set(d.data.filter((row) => {
+      const t = total(row);
+      return t > 0 && ((+row.Missing || 0) + (+row['Requires Review'] || 0)) / t >= 0.8;
+    }).map((row) => row.Requirement));
+  }
+
+  function renderSystemic() {
+    const d = dash.data('requirement_tally');
+    const box = $('systemic');
+    if (d.status !== 'ok' || !d.data.length) { box.hidden = true; return; }
+    const gaps = [...systemicLabels()].map((Requirement) => ({ Requirement }));
+    clear(box);
+    if (!gaps.length) { box.hidden = true; return; }
+    box.hidden = false;
+    box.appendChild(el('b', null, 'Organisation-wide gaps. '));
+    box.appendChild(document.createTextNode(
+      `${gaps.map((g) => g.Requirement).join(', ')} ${gaps.length === 1 ? 'is' : 'are'} unrecorded for ` +
+      `at least 80% of staff. That points to a gap in how the information is captured rather than to ` +
+      `individual omissions, so they are excluded from the follow-up count and from the category ` +
+      `figures below, and chased as a process change rather than person by person.`));
+  }
+
+  const SEGMENTS = [['Staff Fully Compliant', 'ok', '✅'], ['Expiring Soon', 'warn', '⚠️'],
+                    ['Expired', 'bad', '❌'], ['Requires Review', 'review', '🔍'],
+                    ['Missing', 'gone', '⬜']];
+
+  function renderCategories() {
+    const d = dash.data('category_tally');
+    const wrap = $('cats');
+    clear(wrap);
+    if (d.status !== 'ok' || !d.data.length) {
+      wrap.appendChild(el('p', 'po-ph', d.status === 'loading' ? 'Loading…' : '—'));
+      return;
+    }
+    for (const row of d.data) {
+      const card = el('div', 'po-cat');
+      card.setAttribute('data-source', 'category_tally');
+      card.appendChild(el('h3', 'po-cat-t', row.Category));
+
+      const big = el('div', 'po-cat-big');
+      const n = el('span', 'po-cat-n', row['Staff Fully Compliant']);
+      n.setAttribute('data-field', 'Staff Fully Compliant');
+      n.setAttribute('data-where', `Category=${encodeURIComponent(row.Category)}`);
+      big.appendChild(n);
+      big.appendChild(el('span', 'po-cat-of',
+        `of ${row['Staff Total']} staff fully compliant`));
+      card.appendChild(big);
+
+      const total = SEGMENTS.reduce((a, [c]) => a + (+row[c] || 0), 0);
+      const bar = el('div', 'po-bar');
+      for (const [c, v] of SEGMENTS) {
+        const count = +row[c] || 0;
+        if (!count) continue;
+        const seg = el('span');
+        seg.style.width = `${(count / total) * 100}%`;
+        seg.style.background = `var(--${v})`;
+        seg.title = `${c}: ${count}`;
+        bar.appendChild(seg);
+      }
+      card.appendChild(bar);
+
+      const list = el('ul', 'po-cat-list');
+      for (const [c, v, glyph] of SEGMENTS) {
+        const count = +row[c] || 0;
+        if (!count || c === 'Staff Fully Compliant') continue;
+        const li = el('li', 'po-cat-row');
+        const left = el('span');
+        left.appendChild(el('span', `po-s-${v === 'ok' ? 'ok' : v === 'warn' ? 'warn' : v === 'bad' ? 'bad' : v === 'review' ? 'rev' : 'gone'}`, `${glyph} `));
+        left.appendChild(document.createTextNode(STATUS_NAME[glyph]));
+        li.appendChild(left);
+        const right = el('span', null, count);
+        right.setAttribute('data-field', c);
+        right.setAttribute('data-where', `Category=${encodeURIComponent(row.Category)}`);
+        li.appendChild(right);
+        list.appendChild(li);
+      }
+      card.appendChild(list);
+
+      card.appendChild(el('p', 'po-cat-b', row.Description));
+      if (row['Not Tracked']) {
+        card.appendChild(el('p', 'po-cat-ex',
+          `Not counted here: ${row['Not Tracked']} — unrecorded for nearly all staff.`));
+      }
       wrap.appendChild(card);
     }
   }
@@ -323,23 +478,22 @@ dash.calc('total_id_short', {
     for (const row of d.data) {
       const tr = el('tr');
       for (const c of cols) {
-        const td = el('td', NUMERIC.has(c) || typeof row[c] === 'number' ? 'po-num' : null, row[c]);
+        const td = el('td', typeof row[c] === 'number' ? 'po-num' : null, row[c]);
         if (c === 'Requirement') td.className = 'po-name';
         tr.appendChild(td);
       }
       const total = ['Compliant', 'Expiring Soon', 'Expired', 'Requires Review', 'Missing']
         .reduce((a, c) => a + (+row[c] || 0), 0);
       const bar = el('div', 'po-bar');
-      const segs = [['Compliant', 'ok'], ['Expiring Soon', 'warn'], ['Expired', 'bad'],
-                    ['Requires Review', 'review'], ['Missing', 'gone']];
-      for (const [c, v] of segs) {
+      for (const [c, v] of [['Compliant', 'ok'], ['Expiring Soon', 'warn'], ['Expired', 'bad'],
+                            ['Requires Review', 'review'], ['Missing', 'gone']]) {
         const n = +row[c] || 0;
         if (!n) continue;
-        const s = el('span');
-        s.style.width = `${(n / total) * 100}%`;
-        s.style.background = `var(--${v})`;
-        s.title = `${c}: ${n}`;
-        bar.appendChild(s);
+        const seg = el('span');
+        seg.style.width = `${(n / total) * 100}%`;
+        seg.style.background = `var(--${v})`;
+        seg.title = `${c}: ${n}`;
+        bar.appendChild(seg);
       }
       const td = el('td'); td.appendChild(bar); tr.appendChild(td);
       tbody.appendChild(tr);
@@ -369,6 +523,31 @@ dash.calc('total_id_short', {
     return td;
   }
 
+  function visibleRows(all) {
+    const f = FILTERS.find((x) => x.key === filterKey) || FILTERS[0];
+    const ctx = { systemic: systemicLabels() };
+    const q = search.trim().toLowerCase();
+    return all.filter((r) => f.test(r, ctx) &&
+      (!q || String(r['Staff Name'] || '').toLowerCase().includes(q)));
+  }
+
+  function renderFilters() {
+    const d = dash.data('staff_compliance');
+    const wrap = $('filters');
+    clear(wrap);
+    const all = d.status === 'ok' ? d.data : [];
+    const ctx = { systemic: systemicLabels() };
+    for (const f of FILTERS) {
+      const b = el('button', 'po-chip');
+      b.type = 'button';
+      b.setAttribute('aria-pressed', String(f.key === filterKey));
+      b.appendChild(document.createTextNode(f.label));
+      b.appendChild(el('b', null, all.filter((r) => f.test(r, ctx)).length));
+      b.addEventListener('click', () => { filterKey = f.key; renderFilters(); renderStaff(); });
+      wrap.appendChild(b);
+    }
+  }
+
   function renderStaff() {
     const d = dash.data('staff_compliance');
     const table = $('staff-table');
@@ -382,14 +561,17 @@ dash.calc('total_id_short', {
     table.setAttribute('data-source', 'staff_compliance');
     table.setAttribute('data-row-key', 'Staff Name');
 
-    const present = COLS.filter((c) => c in d.data[0]);
+    const wanted = showAllCols ? FULL_COLS : SUMMARY_COLS;
+    const present = wanted.filter((c) => c in d.data[0]);
+
     const thead = el('thead'); const hr = el('tr');
     for (const c of present) {
       const th = el('th', sortCol === c ? 'po-sorted' : null);
       th.setAttribute('data-field', c);
       th.appendChild(document.createTextNode(c + (sortCol === c ? (sortDir > 0 ? ' ▲' : ' ▼') : '')));
       if (ONE_TIME.includes(c)) th.appendChild(el('span', 'po-track', 'one-time'));
-      else if (window.PO.RENEWAL.includes(c)) th.appendChild(el('span', 'po-track', 'renewal'));
+      else if (RENEWAL.includes(c)) th.appendChild(el('span', 'po-track', 'renewal'));
+      else if (CATEGORY_COLS.includes(c)) th.appendChild(el('span', 'po-track', 'compliant / tracked'));
       th.addEventListener('click', () => {
         if (sortCol === c) sortDir = -sortDir; else { sortCol = c; sortDir = 1; }
         renderStaff();
@@ -398,13 +580,13 @@ dash.calc('total_id_short', {
     }
     thead.appendChild(hr); table.appendChild(thead);
 
-    const rows = d.data.slice().sort((a, b) => {
+    const rows = visibleRows(d.data).sort((a, b) => {
       const av = a[sortCol], bv = b[sortCol];
       if (NUMERIC.has(sortCol)) return ((+av || 0) - (+bv || 0)) * sortDir;
       const ag = glyphOf(av), bg = glyphOf(bv);
       if (ag && bg) {
-        const d2 = ORDER.indexOf(ag) - ORDER.indexOf(bg);
-        if (d2) return d2 * sortDir;
+        const diff = ORDER.indexOf(ag) - ORDER.indexOf(bg);
+        if (diff) return diff * sortDir;
       }
       return String(av ?? '').localeCompare(String(bv ?? '')) * sortDir;
     });
@@ -414,47 +596,60 @@ dash.calc('total_id_short', {
       const tr = el('tr');
       for (const c of present) {
         let td;
-        if (c === 'Staff Name') { td = el('td', 'po-name', row[c]); }
-        else if (c === 'Compliance Score (%)') { td = scoreCell(row[c]); }
-        else if (c === 'Notes') { td = el('td', 'po-notes', row[c]); }
-        else { td = statusCell(row[c]); }
+        if (c === 'Staff Name') td = el('td', 'po-name', row[c]);
+        else if (c === 'Compliance Score (%)') td = scoreCell(row[c]);
+        else if (c === 'Notes') td = el('td', 'po-notes', row[c]);
+        else td = statusCell(row[c]);
         tr.appendChild(td);
       }
       tbody.appendChild(tr);
     }
     table.appendChild(tbody);
-    $('staff-count').textContent = `${rows.length} staff · sorted by ${sortCol}`;
-  }
 
-  function renderSystemic() {
-    const d = dash.data('requirement_tally');
-    const box = $('systemic');
-    if (d.status !== 'ok' || !d.data.length) { box.hidden = true; return; }
-    const total = (row) => ['Compliant', 'Expiring Soon', 'Expired', 'Requires Review', 'Missing']
-      .reduce((a, c) => a + (+row[c] || 0), 0);
-    const gaps = d.data.filter((row) => {
-      const t = total(row);
-      return t > 0 && ((+row.Missing || 0) + (+row['Requires Review'] || 0)) / t >= 0.8;
-    });
-    clear(box);
-    if (!gaps.length) { box.hidden = true; return; }
-    box.hidden = false;
-    box.appendChild(el('b', null, 'Organisation-wide gaps. '));
-    box.appendChild(document.createTextNode(
-      `${gaps.map((g) => g.Requirement).join(', ')} ${gaps.length === 1 ? 'is' : 'are'} unrecorded for ` +
-      `at least 80% of staff. That points to a gap in how the information is captured rather than to ` +
-      `individual omissions, so these are excluded from the follow-up count above and chased as a ` +
-      `process change rather than person by person.`));
+    const total = d.data.length;
+    $('staff-count').textContent = rows.length === total
+      ? `${total} staff · sorted by ${sortCol}`
+      : `${rows.length} of ${total} staff · sorted by ${sortCol}`;
   }
 
   function renderMeta() {
     const d = dash.data('staff_compliance');
     const bits = ['PlusOne Mentoring · NDIS provider 4050002983'];
-    if (d.meta && d.meta.updatedAt) bits.push(`as at ${d.meta.updatedAt}`);
+    const at = d.meta && (d.meta.updatedAt || d.meta.at);
+    if (at) bits.push(`data built ${at}`);
     $('asof').textContent = bits.join(' · ');
   }
 
+  // --- controls -------------------------------------------------------------
+  const btn = $('refresh');
+  btn.addEventListener('click', () => {
+    if (btn.disabled) return;
+    btn.disabled = true;
+    btn.classList.add('is-busy');
+    $('refresh-label').textContent = 'Reloading…';
+    for (const id of ['staff_compliance', 'requirement_tally', 'category_tally']) {
+      try { dash.refresh(id); } catch (e) { /* a source that cannot refresh is left as is */ }
+    }
+    // dash.onData fires when the reload lands; this only restores the control.
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.classList.remove('is-busy');
+      $('refresh-label').textContent = 'Reload data';
+    }, 1500);
+  });
+
+  $('cols').addEventListener('click', () => {
+    showAllCols = !showAllCols;
+    $('cols').textContent = showAllCols ? 'Show summary only' : 'Show all requirements';
+    renderStaff();
+  });
+
+  $('search').addEventListener('input', (e) => { search = e.target.value; renderStaff(); });
+
   renderLegend();
-  dash.onData(() => { renderTotals(); renderSystemic(); renderRequirements(); renderStaff(); renderMeta(); });
+  dash.onData(() => {
+    renderTotals(); renderSystemic(); renderCategories();
+    renderRequirements(); renderFilters(); renderStaff(); renderMeta();
+  });
 })();
 </script>

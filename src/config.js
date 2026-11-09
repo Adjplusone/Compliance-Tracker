@@ -23,6 +23,21 @@ const STATUS_LABEL = {
   '🔍': 'Requires Review',
 };
 
+
+/**
+ * Requirement categories. These group the ten requirements the way the team
+ * thinks about them, so the dashboard can lead with four readable groups
+ * rather than ten rows of numbers.
+ */
+const CATEGORIES = [
+  { key: 'screening', label: 'Screening & Checks',
+    blurb: 'Worker screening and background clearances required before a shift.' },
+  { key: 'training', label: 'Training & Certification',
+    blurb: 'Certificates that lapse and need periodic renewal.' },
+  { key: 'driving', label: 'Driving & Vehicle',
+    blurb: 'Required for staff who transport participants.' },
+];
+
 // Tracks ---------------------------------------------------------------------
 // A = one-time: taken once, no renewal cycle. Verify a real document + date.
 // B = renewal: monitored against an expiry date with 30/60/90-day alerting.
@@ -42,6 +57,7 @@ const TRACK = { ONE_TIME: 'A', RENEWAL: 'B' };
 const REQUIREMENTS = [
   {
     key: 'ndis_worker_check',
+    category: 'screening',
     label: 'NDIS Worker Check',
     track: TRACK.RENEWAL,
     dateField: 'NDIS_WC_Expiry',
@@ -51,6 +67,7 @@ const REQUIREMENTS = [
   },
   {
     key: 'ndis_orientation',
+    category: 'screening',
     label: 'NDIS Worker Orientation',
     track: TRACK.ONE_TIME,
     dateField: 'Date_Issued',
@@ -60,6 +77,7 @@ const REQUIREMENTS = [
   },
   {
     key: 'wwcc',
+    category: 'screening',
     label: 'WWCC',
     track: TRACK.RENEWAL,
     dateField: 'WWCC_Expiry',
@@ -69,6 +87,7 @@ const REQUIREMENTS = [
   },
   {
     key: 'police_check',
+    category: 'screening',
     label: 'Police Check',
     track: TRACK.ONE_TIME,
     dateField: 'Police_Check_Issue_Date',
@@ -78,6 +97,7 @@ const REQUIREMENTS = [
   },
   {
     key: 'infection_control',
+    category: 'training',
     label: 'Infection Control',
     track: TRACK.ONE_TIME,
     dateField: 'Infection_Control_Completion_date',
@@ -87,6 +107,7 @@ const REQUIREMENTS = [
   },
   {
     key: 'drivers_licence',
+    category: 'driving',
     label: "Driver's Licence",
     track: TRACK.RENEWAL,
     dateField: 'Drivers_License_Expiry',
@@ -96,6 +117,7 @@ const REQUIREMENTS = [
   },
   {
     key: 'vehicle_registration',
+    category: 'driving',
     label: 'Vehicle Registration',
     track: TRACK.RENEWAL,
     dateField: 'Car_Registration_Expiry',
@@ -105,6 +127,7 @@ const REQUIREMENTS = [
   },
   {
     key: 'vehicle_insurance',
+    category: 'driving',
     label: 'Vehicle Insurance',
     track: TRACK.RENEWAL,
     dateField: 'Insurance_Term_Date',
@@ -114,6 +137,7 @@ const REQUIREMENTS = [
   },
   {
     key: 'first_aid',
+    category: 'training',
     label: 'First Aid',
     track: TRACK.RENEWAL,
     dateField: 'Renewal_Date',
@@ -123,6 +147,7 @@ const REQUIREMENTS = [
   },
   {
     key: 'cpr',
+    category: 'training',
     label: 'CPR',
     track: TRACK.RENEWAL,
     dateField: 'CPR_Renewal_Date',
@@ -176,6 +201,7 @@ const TEST_RECORD_PATTERN = /(^|[^a-z])test(ing)?([^a-z]|$)/i;
 const REF_FIELDS = REQUIREMENTS.map((r) => r.refField).filter(Boolean);
 
 module.exports = {
+  CATEGORIES,
   TEST_RECORD_PATTERN,
   STATUS,
   STATUS_LABEL,

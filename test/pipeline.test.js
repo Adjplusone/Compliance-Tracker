@@ -163,3 +163,14 @@ test('test records are excluded from the dataset but reported', () => {
   equal(TEST_RECORD_PATTERN.test('Maria Testa'), false, 'Testa is a real surname');
   equal(TEST_RECORD_PATTERN.test('Contestabile'), false);
 });
+
+test('the compliance score counts only what is actually tracked', () => {
+  // Leaving organisation-wide gaps in the denominator caps everyone around
+  // 60% and makes a fully compliant staff member look middling.
+  for (const s of ds.staff) {
+    equal(s.scoreDenominator, s.items.length - s.excluded.length, `${s.name} denominator`);
+    if (s.scoreDenominator > 0) {
+      equal(s.score, Math.round((s.scoreNumerator / s.scoreDenominator) * 100), `${s.name} score`);
+    }
+  }
+});

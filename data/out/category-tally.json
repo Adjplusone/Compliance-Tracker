@@ -1,0 +1,38 @@
+[
+  {
+    "Category": "Screening & Checks",
+    "Requirements": 4,
+    "Not Tracked": "",
+    "Staff Fully Compliant": 23,
+    "Expiring Soon": 1,
+    "Expired": 10,
+    "Requires Review": 44,
+    "Missing": 15,
+    "Staff Total": 93,
+    "Description": "Worker screening and background clearances required before a shift."
+  },
+  {
+    "Category": "Training & Certification",
+    "Requirements": 1,
+    "Not Tracked": "Infection Control; CPR",
+    "Staff Fully Compliant": 61,
+    "Expiring Soon": 6,
+    "Expired": 9,
+    "Requires Review": 3,
+    "Missing": 14,
+    "Staff Total": 93,
+    "Description": "Certificates that lapse and need periodic renewal."
+  },
+  {
+    "Category": "Driving & Vehicle",
+    "Requirements": 1,
+    "Not Tracked": "Vehicle Registration; Vehicle Insurance",
+    "Staff Fully Compliant": 55,
+    "Expiring Soon": 8,
+    "Expired": 10,
+    "Requires Review": 2,
+    "Missing": 18,
+    "Staff Total": 93,
+    "Description": "Required for staff who transport participants."
+  }
+]

@@ -322,10 +322,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -637,9 +642,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -999,10 +1009,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -1374,10 +1389,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -1736,10 +1756,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -2053,10 +2078,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -2345,9 +2375,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -2695,10 +2730,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -3072,10 +3112,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -3447,10 +3492,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 20,
-      "scoreDenominator": 10,
+      "score": 33,
+      "scoreDenominator": 6,
       "scoreNumerator": 2,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "first_aid",
@@ -3819,10 +3869,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -4219,10 +4274,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
-      "scoreNumerator": 4,
-      "excluded": [],
+      "score": 50,
+      "scoreDenominator": 6,
+      "scoreNumerator": 3,
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "ndis_worker_check",
@@ -4659,10 +4719,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -5040,10 +5105,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -5403,10 +5473,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -5747,10 +5822,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "first_aid",
@@ -6131,10 +6211,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -6510,10 +6595,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "first_aid",
@@ -6897,10 +6987,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -7271,10 +7366,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -7720,10 +7820,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -8118,10 +8223,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -8504,10 +8614,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -8890,10 +9005,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 30,
-      "scoreDenominator": 10,
+      "score": 50,
+      "scoreDenominator": 6,
       "scoreNumerator": 3,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -9273,10 +9393,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 10,
-      "scoreDenominator": 10,
+      "score": 17,
+      "scoreDenominator": 6,
       "scoreNumerator": 1,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -9607,9 +9732,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -9957,10 +10087,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 30,
-      "scoreDenominator": 10,
+      "score": 50,
+      "scoreDenominator": 6,
       "scoreNumerator": 3,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -10309,10 +10444,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 30,
-      "scoreDenominator": 10,
+      "score": 50,
+      "scoreDenominator": 6,
       "scoreNumerator": 3,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -10664,10 +10804,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -11029,10 +11174,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -11406,10 +11556,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -11781,10 +11936,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -12156,10 +12316,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -12471,9 +12636,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -12762,9 +12932,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -13122,10 +13297,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -13461,10 +13641,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 20,
-      "scoreDenominator": 10,
+      "score": 33,
+      "scoreDenominator": 6,
       "scoreNumerator": 2,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "first_aid",
@@ -13865,10 +14050,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
-      "scoreNumerator": 5,
-      "excluded": [],
+      "score": 67,
+      "scoreDenominator": 6,
+      "scoreNumerator": 4,
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -14261,10 +14451,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "vehicle_registration",
@@ -14592,9 +14787,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -14954,10 +15154,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 30,
-      "scoreDenominator": 10,
+      "score": 50,
+      "scoreDenominator": 6,
       "scoreNumerator": 3,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -15364,10 +15569,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -15726,10 +15936,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 10,
-      "scoreDenominator": 10,
+      "score": 17,
+      "scoreDenominator": 6,
       "scoreNumerator": 1,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -16121,10 +16336,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "wwcc",
@@ -16505,10 +16725,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -16941,10 +17166,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 70,
-      "scoreDenominator": 10,
-      "scoreNumerator": 7,
-      "excluded": [],
+      "score": 100,
+      "scoreDenominator": 6,
+      "scoreNumerator": 6,
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -17329,10 +17559,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "wwcc",
@@ -17642,9 +17877,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -18004,10 +18244,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -18366,9 +18611,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -18728,10 +18978,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -19100,10 +19355,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -19478,10 +19738,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -19872,10 +20137,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -20197,9 +20467,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -20559,10 +20834,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -20935,10 +21215,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -21322,10 +21607,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
-      "scoreNumerator": 6,
-      "excluded": [],
+      "score": 83,
+      "scoreDenominator": 6,
+      "scoreNumerator": 5,
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -21662,10 +21952,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 10,
-      "scoreDenominator": 10,
+      "score": 17,
+      "scoreDenominator": 6,
       "scoreNumerator": 1,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "wwcc",
@@ -21983,9 +22278,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -22274,9 +22574,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -22698,10 +23003,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
-      "scoreNumerator": 6,
-      "excluded": [],
+      "score": 83,
+      "scoreDenominator": 6,
+      "scoreNumerator": 5,
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -23086,10 +23396,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 20,
-      "scoreDenominator": 10,
+      "score": 33,
+      "scoreDenominator": 6,
       "scoreNumerator": 2,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -23426,9 +23741,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -23800,10 +24120,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
-      "scoreNumerator": 5,
-      "excluded": [],
+      "score": 67,
+      "scoreDenominator": 6,
+      "scoreNumerator": 4,
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -24186,10 +24511,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -24556,10 +24886,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -24940,10 +25275,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "first_aid",
@@ -25322,10 +25662,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -25644,10 +25989,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 10,
-      "scoreDenominator": 10,
+      "score": 17,
+      "scoreDenominator": 6,
       "scoreNumerator": 1,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -26020,10 +26370,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -26395,10 +26750,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 20,
-      "scoreDenominator": 10,
+      "score": 33,
+      "scoreDenominator": 6,
       "scoreNumerator": 2,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "first_aid",
@@ -26798,10 +27158,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -27185,10 +27550,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 30,
-      "scoreDenominator": 10,
+      "score": 50,
+      "scoreDenominator": 6,
       "scoreNumerator": 3,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "first_aid",
@@ -27597,10 +27967,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -27925,10 +28300,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 20,
-      "scoreDenominator": 10,
+      "score": 33,
+      "scoreDenominator": 6,
       "scoreNumerator": 2,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -28244,10 +28624,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 30,
-      "scoreDenominator": 10,
+      "score": 50,
+      "scoreDenominator": 6,
       "scoreNumerator": 3,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "wwcc",
@@ -28638,10 +29023,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "first_aid",
@@ -28951,9 +29341,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -29313,10 +29708,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -29685,10 +30085,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 10,
-      "scoreDenominator": 10,
+      "score": 17,
+      "scoreDenominator": 6,
       "scoreNumerator": 1,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -30019,9 +30424,14 @@
         }
       },
       "score": 0,
-      "scoreDenominator": 10,
+      "scoreDenominator": 6,
       "scoreNumerator": 0,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [],
@@ -30381,10 +30791,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "ndis_worker_check",
@@ -30765,10 +31180,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -31178,10 +31598,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 50,
-      "scoreDenominator": 10,
+      "score": 83,
+      "scoreDenominator": 6,
       "scoreNumerator": 5,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -31543,10 +31968,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "drivers_licence",
@@ -31917,10 +32347,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 10,
-      "scoreDenominator": 10,
+      "score": 17,
+      "scoreDenominator": 6,
       "scoreNumerator": 1,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "wwcc",
@@ -32268,10 +32703,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -32597,10 +33037,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 40,
-      "scoreDenominator": 10,
+      "score": 67,
+      "scoreDenominator": 6,
       "scoreNumerator": 4,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": true,
       "folderNames": [
@@ -32972,10 +33417,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [
@@ -33313,10 +33763,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 10,
-      "scoreDenominator": 10,
+      "score": 17,
+      "scoreDenominator": 6,
       "scoreNumerator": 1,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "wwcc",
@@ -33657,10 +34112,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 30,
-      "scoreDenominator": 10,
+      "score": 50,
+      "scoreDenominator": 6,
       "scoreNumerator": 3,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [
         {
           "key": "first_aid",
@@ -34036,10 +34496,15 @@
           "statusLabel": "Missing"
         }
       },
-      "score": 60,
-      "scoreDenominator": 10,
+      "score": 100,
+      "scoreDenominator": 6,
       "scoreNumerator": 6,
-      "excluded": [],
+      "excluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
       "expiryAlerts": [],
       "followUpRequired": false,
       "folderNames": [

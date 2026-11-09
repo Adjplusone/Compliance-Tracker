@@ -163,6 +163,17 @@ function build(options = {}) {
       !systemicKeys.has(i.key) &&
       (i.status === STATUS.EXPIRED || i.status === STATUS.EXPIRING ||
        i.status === STATUS.MISSING || i.status === STATUS.REVIEW));
+
+    // Score against what is actually tracked. Leaving CPR and the vehicle
+    // fields in the denominator caps everyone around 60% and makes a staff
+    // member who is compliant on every tracked requirement look middling,
+    // which buries the people who are genuinely behind.
+    const scored = s.items.filter((i) => !systemicKeys.has(i.key));
+    const ok = scored.filter((i) => i.status === STATUS.COMPLIANT);
+    s.scoreNumerator = ok.length;
+    s.scoreDenominator = scored.length;
+    s.score = scored.length ? Math.round((ok.length / scored.length) * 100) : null;
+    s.excluded = [...systemicKeys];
   }
 
   const dataset = {
