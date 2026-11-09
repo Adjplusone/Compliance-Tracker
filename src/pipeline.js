@@ -13,7 +13,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const { REQUIREMENTS, STATUS, TRACK } = require('./config');
+const { REQUIREMENTS, STATUS, TRACK, TEST_RECORD_PATTERN } = require('./config');
 const { evaluateStaff } = require('./rules/compliance');
 const { scoreIdentity } = require('./rules/hundred-point');
 const { classifyFolder } = require('./extract/classify');
@@ -81,7 +81,22 @@ function build(options = {}) {
   const zoho = loadJSON(path.join(rawDir, 'zoho-staff.json'));
   const { folders, sliceFiles, duplicateConflicts } = loadFolders(rawDir);
 
-  const match = matchStaffToFolders(zoho.records, folders);
+  // Drop test records before anything else, so they cannot reach the
+  // dashboard, the totals or the follow-up email. They are listed in the
+  // reconciliation block rather than disappearing without trace.
+  const isTestRecord = (r) =>
+    TEST_RECORD_PATTERN.test(String(r.Vendor_Name || '')) ||
+    TEST_RECORD_PATTERN.test(String(r.Staff_Last_Name || ''));
+  const excludedTestRecords = zoho.records.filter(isTestRecord)
+    .map((r) => ({
+      staffId: r.id,
+      name: [r.Vendor_Name, r.Staff_Last_Name].filter(Boolean).join(' ').trim(),
+      staffStatus: r.Staff_Status,
+      reason: 'Name identifies this as a test record, not a staff member',
+    }));
+  const liveRecords = zoho.records.filter((r) => !isTestRecord(r));
+
+  const match = matchStaffToFolders(liveRecords, folders);
 
   const staff = match.matched.map((m) => {
     const { evidence, identity, unclassified, rejected } = classifyFolder(m.files);
@@ -113,10 +128,11 @@ function build(options = {}) {
 
   const dataset = {
     generatedAt: today.toISOString().slice(0, 10),
-    source: { zohoPulledAt: zoho.pulledAt, zohoCount: zoho.count, folderSlices: sliceFiles, folderCount: folders.length },
+    source: { zohoPulledAt: zoho.pulledAt, zohoCount: zoho.count, staffEvaluated: staff.length, folderSlices: sliceFiles, folderCount: folders.length },
     staff,
     reconciliation: {
       zohoRecords: zoho.records.length,
+      excludedTestRecords,
       matchedStaff: staff.filter((s) => s.folderNames.length > 0).length,
       unmatchedStaff: match.unmatchedStaff,
       unmatchedFolders: match.unmatchedFolders,

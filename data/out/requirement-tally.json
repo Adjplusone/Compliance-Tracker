@@ -3,36 +3,36 @@
     "Requirement": "NDIS Worker Check",
     "Track": "Renewal",
     "Compliant": 43,
-    "Expiring Soon": 1,
+    "Expiring Soon": 0,
     "Expired": 3,
-    "Requires Review": 19,
-    "Missing": 28
+    "Requires Review": 26,
+    "Missing": 21
   },
   {
     "Requirement": "NDIS Worker Orientation",
     "Track": "One-time",
-    "Compliant": 40,
+    "Compliant": 52,
     "Expiring Soon": 0,
     "Expired": 0,
-    "Requires Review": 39,
+    "Requires Review": 26,
     "Missing": 15
   },
   {
     "Requirement": "WWCC",
     "Track": "Renewal",
     "Compliant": 67,
-    "Expiring Soon": 2,
+    "Expiring Soon": 1,
     "Expired": 7,
-    "Requires Review": 6,
-    "Missing": 12
+    "Requires Review": 5,
+    "Missing": 13
   },
   {
     "Requirement": "Police Check",
     "Track": "One-time",
-    "Compliant": 40,
+    "Compliant": 51,
     "Expiring Soon": 0,
     "Expired": 0,
-    "Requires Review": 37,
+    "Requires Review": 25,
     "Missing": 17
   },
   {
@@ -41,24 +41,24 @@
     "Compliant": 6,
     "Expiring Soon": 0,
     "Expired": 0,
-    "Requires Review": 5,
+    "Requires Review": 4,
     "Missing": 83
   },
   {
     "Requirement": "Driver's Licence",
     "Track": "Renewal",
-    "Compliant": 56,
-    "Expiring Soon": 9,
+    "Compliant": 55,
+    "Expiring Soon": 8,
     "Expired": 10,
     "Requires Review": 2,
-    "Missing": 17
+    "Missing": 18
   },
   {
     "Requirement": "Vehicle Registration",
     "Track": "Renewal",
     "Compliant": 0,
     "Expiring Soon": 1,
-    "Expired": 1,
+    "Expired": 0,
     "Requires Review": 0,
     "Missing": 92
   },
@@ -67,24 +67,24 @@
     "Track": "Renewal",
     "Compliant": 0,
     "Expiring Soon": 0,
-    "Expired": 1,
+    "Expired": 0,
     "Requires Review": 1,
     "Missing": 92
   },
   {
     "Requirement": "First Aid",
     "Track": "Renewal",
-    "Compliant": 62,
-    "Expiring Soon": 7,
+    "Compliant": 61,
+    "Expiring Soon": 6,
     "Expired": 9,
     "Requires Review": 3,
-    "Missing": 13
+    "Missing": 14
   },
   {
     "Requirement": "CPR",
     "Track": "Renewal",
     "Compliant": 0,
-    "Expiring Soon": 1,
+    "Expiring Soon": 0,
     "Expired": 0,
     "Requires Review": 0,
     "Missing": 93

@@ -15,7 +15,7 @@ test('rejects a stub file below the minimum size', () => {
 test('rejects a non-document file type', () => {
   const r = verifyFile({ name: 'notes.exe', size: 500000 });
   equal(r.valid, false);
-  assert(/unsupported file type/.test(r.reason));
+  assert(/cannot be verified automatically/.test(r.reason));
 });
 test('rejects a file with no extension', () => {
   equal(verifyFile({ name: 'Police_Check', size: 500000 }).valid, false);

@@ -1,0 +1,2490 @@
+{
+  "period": "November 2026",
+  "generatedAt": "2026-11-09",
+  "systemic": [
+    {
+      "key": "infection_control",
+      "label": "Infection Control",
+      "absent": 83,
+      "total": 93,
+      "percent": 89
+    },
+    {
+      "key": "vehicle_registration",
+      "label": "Vehicle Registration",
+      "absent": 92,
+      "total": 93,
+      "percent": 99
+    },
+    {
+      "key": "vehicle_insurance",
+      "label": "Vehicle Insurance",
+      "absent": 93,
+      "total": 93,
+      "percent": 100
+    },
+    {
+      "key": "cpr",
+      "label": "CPR",
+      "absent": 93,
+      "total": 93,
+      "percent": 100
+    }
+  ],
+  "totals": {
+    "staff": 93,
+    "followUp": 78,
+    "systemicGaps": 4,
+    "expired": 23,
+    "missing": 23,
+    "expiring30": 6,
+    "expiring60": 5,
+    "expiring90": 5,
+    "noExpiryRecorded": 21,
+    "idShortfall": 67,
+    "failedFiles": 16,
+    "duplicateEvidence": 21
+  },
+  "expired": [
+    {
+      "name": "Ben Lucas",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "Driver's Licence",
+          "date": "2026-04-26",
+          "daysAgo": 197
+        }
+      ]
+    },
+    {
+      "name": "Cambell Waller",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "First Aid",
+          "date": "2026-03-24",
+          "daysAgo": 230
+        }
+      ]
+    },
+    {
+      "name": "Charlotte Lange",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "NDIS Worker Check",
+          "date": "2026-11-02",
+          "daysAgo": 7
+        }
+      ]
+    },
+    {
+      "name": "Connor Schatto",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "First Aid",
+          "date": "2026-08-21",
+          "daysAgo": 80
+        }
+      ]
+    },
+    {
+      "name": "Dan Fidler",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "First Aid",
+          "date": "2026-08-18",
+          "daysAgo": 83
+        }
+      ]
+    },
+    {
+      "name": "Emma Lawson",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "Driver's Licence",
+          "date": "2026-10-08",
+          "daysAgo": 32
+        }
+      ]
+    },
+    {
+      "name": "Jasmine Smith",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "WWCC",
+          "date": "2026-10-25",
+          "daysAgo": 15
+        },
+        {
+          "label": "First Aid",
+          "date": "2026-10-21",
+          "daysAgo": 19
+        }
+      ]
+    },
+    {
+      "name": "Joel Flower",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "Driver's Licence",
+          "date": "2026-08-17",
+          "daysAgo": 84
+        }
+      ]
+    },
+    {
+      "name": "Jordan Stephens",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "Driver's Licence",
+          "date": "2026-03-15",
+          "daysAgo": 239
+        }
+      ]
+    },
+    {
+      "name": "Jordan Townsend",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "WWCC",
+          "date": "2026-09-17",
+          "daysAgo": 53
+        }
+      ]
+    },
+    {
+      "name": "Kai Miller",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "Driver's Licence",
+          "date": "2026-09-08",
+          "daysAgo": 62
+        }
+      ]
+    },
+    {
+      "name": "Kurtis Ridley",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "WWCC",
+          "date": "2026-09-08",
+          "daysAgo": 62
+        }
+      ]
+    },
+    {
+      "name": "Lucy Waller",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "WWCC",
+          "date": "2026-04-21",
+          "daysAgo": 202
+        },
+        {
+          "label": "First Aid",
+          "date": "2026-07-25",
+          "daysAgo": 107
+        }
+      ]
+    },
+    {
+      "name": "Marcus Petts",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "NDIS Worker Check",
+          "date": "2026-10-06",
+          "daysAgo": 34
+        },
+        {
+          "label": "Driver's Licence",
+          "date": "2026-05-09",
+          "daysAgo": 184
+        }
+      ]
+    },
+    {
+      "name": "Mitchell Obst",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "Driver's Licence",
+          "date": "2026-07-31",
+          "daysAgo": 101
+        }
+      ]
+    },
+    {
+      "name": "Nash Reidy",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "First Aid",
+          "date": "2026-03-27",
+          "daysAgo": 227
+        }
+      ]
+    },
+    {
+      "name": "Oliver Canale",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "First Aid",
+          "date": "2025-12-25",
+          "daysAgo": 319
+        }
+      ]
+    },
+    {
+      "name": "Seb Sobels",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "WWCC",
+          "date": "2025-06-11",
+          "daysAgo": 516
+        },
+        {
+          "label": "Driver's Licence",
+          "date": "2026-01-24",
+          "daysAgo": 289
+        }
+      ]
+    },
+    {
+      "name": "Sinead Kain",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "Driver's Licence",
+          "date": "2026-10-19",
+          "daysAgo": 21
+        }
+      ]
+    },
+    {
+      "name": "Sophie Leis",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "Driver's Licence",
+          "date": "2026-05-12",
+          "daysAgo": 181
+        }
+      ]
+    },
+    {
+      "name": "Summer Roberts",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "NDIS Worker Check",
+          "date": "2026-07-30",
+          "daysAgo": 102
+        }
+      ]
+    },
+    {
+      "name": "Tom Herbert",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "WWCC",
+          "date": "2026-03-17",
+          "daysAgo": 237
+        },
+        {
+          "label": "First Aid",
+          "date": "2026-03-17",
+          "daysAgo": 237
+        }
+      ]
+    },
+    {
+      "name": "Will Heath",
+      "staffStatus": "Active",
+      "items": [
+        {
+          "label": "WWCC",
+          "date": "2025-07-16",
+          "daysAgo": 481
+        },
+        {
+          "label": "First Aid",
+          "date": "2025-07-21",
+          "daysAgo": 476
+        }
+      ]
+    }
+  ],
+  "missing": [
+    {
+      "name": "Alexandra Kerr",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Benjamin Beadle",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Cambell Waller",
+      "staffStatus": "Active",
+      "items": [
+        "Driver's Licence"
+      ]
+    },
+    {
+      "name": "Evie O'Brien",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Greg Knappstein",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Jacob Oliver",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Jai Chapman",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Jasmine Smith",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Jett Hutchinson",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Jordan Stephens",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check",
+        "Police Check"
+      ]
+    },
+    {
+      "name": "Kytel Jackson",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Lara Martin",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "Driver's Licence"
+      ]
+    },
+    {
+      "name": "Lilah Hill",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Lucy Waller",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "Police Check"
+      ]
+    },
+    {
+      "name": "Lucy Winter",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Macayla Marner",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Matilda Allert",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Ned Kennett",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Seamus Quinn O'Reilly",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "Driver's Licence"
+      ]
+    },
+    {
+      "name": "Simmon Crellin",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Summer",
+      "staffStatus": "Onboarding",
+      "items": [
+        "NDIS Worker Check",
+        "NDIS Worker Orientation",
+        "WWCC",
+        "Police Check",
+        "Driver's Licence",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Taylor Dziego",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Will Kennett",
+      "staffStatus": "Active",
+      "items": [
+        "Police Check",
+        "Driver's Licence"
+      ]
+    }
+  ],
+  "expiring": {
+    "within30": [
+      {
+        "name": "Seth Pascoe",
+        "label": "First Aid",
+        "date": "2026-11-18",
+        "days": 9
+      },
+      {
+        "name": "Oliver Canale",
+        "label": "Driver's Licence",
+        "date": "2026-11-22",
+        "days": 13
+      },
+      {
+        "name": "Jessica Mason",
+        "label": "Vehicle Registration",
+        "date": "2026-11-24",
+        "days": 15
+      },
+      {
+        "name": "Marcus Petts",
+        "label": "First Aid",
+        "date": "2026-11-25",
+        "days": 16
+      },
+      {
+        "name": "Will Kennett",
+        "label": "First Aid",
+        "date": "2026-11-28",
+        "days": 19
+      },
+      {
+        "name": "Jordan Stephens",
+        "label": "First Aid",
+        "date": "2026-12-01",
+        "days": 22
+      }
+    ],
+    "within60": [
+      {
+        "name": "Beau Renshaw",
+        "label": "Driver's Licence",
+        "date": "2026-12-18",
+        "days": 39
+      },
+      {
+        "name": "Ethan Hearl",
+        "label": "Driver's Licence",
+        "date": "2026-12-18",
+        "days": 39
+      },
+      {
+        "name": "Alex Trott",
+        "label": "Driver's Licence",
+        "date": "2026-12-29",
+        "days": 50
+      },
+      {
+        "name": "Ollie Hewetson",
+        "label": "First Aid",
+        "date": "2027-01-01",
+        "days": 53
+      },
+      {
+        "name": "Sophie Leis",
+        "label": "First Aid",
+        "date": "2027-01-01",
+        "days": 53
+      }
+    ],
+    "within90": [
+      {
+        "name": "Tiffany Williss",
+        "label": "Driver's Licence",
+        "date": "2027-01-14",
+        "days": 66
+      },
+      {
+        "name": "Leila March",
+        "label": "Driver's Licence",
+        "date": "2027-01-21",
+        "days": 73
+      },
+      {
+        "name": "Jess Harvey",
+        "label": "Driver's Licence",
+        "date": "2027-01-24",
+        "days": 76
+      },
+      {
+        "name": "Ethan Hearl",
+        "label": "WWCC",
+        "date": "2027-01-25",
+        "days": 77
+      },
+      {
+        "name": "Levi Johnston",
+        "label": "Driver's Licence",
+        "date": "2027-01-28",
+        "days": 80
+      }
+    ]
+  },
+  "noExpiryRecorded": [
+    {
+      "name": "Ben Lucas",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Chloe Butcher",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Ella Luhrs",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Eloise Boesch",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Emma Lawson",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Greta Cummins",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Isabeau Bottroff",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Jess Harvey",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Joel Flower",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Kai Miller",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Lara Martin",
+      "staffStatus": "Onboarding",
+      "items": [
+        "WWCC",
+        "First Aid"
+      ]
+    },
+    {
+      "name": "Logan Holman",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Max Allan",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Nash Reidy",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Oliver Canale",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Olli Hallam",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Ollie Hewetson",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Sinead Kain",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Sophie Leis",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Tom Herbert",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    },
+    {
+      "name": "Will Heath",
+      "staffStatus": "Active",
+      "items": [
+        "NDIS Worker Check"
+      ]
+    }
+  ],
+  "idShortfall": [
+    {
+      "name": "Alex Trott",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Alyssa Duncan",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Beau Renshaw",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Britney Mackay",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Brodie Wills",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Cameron Benier",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Charlotte Lange",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Charlotte Pierson",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Chloe Butcher",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Christian Nardinocchi",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Connor Schatto",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Conor Fielding",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Dan Fidler",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Dan Martin",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Eli Giddings",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Ella Luhrs",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Eloise Boesch",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Emilie Haylock",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Emma Lawson",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Ethan Hearl",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "George Robertson",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Greg Knappstein",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Harrison Geater-Johnson",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Harry Hein",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Henry Filsell",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Isabeau Bottroff",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "James Powell",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Jasmine Smith",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Jess Harvey",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Jessica Mason",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Joel Flower",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Joel Schneider",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Jordan Stephens",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Jordan Townsend",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Kai Miller",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Kaitlin Hards",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Kurtis Ridley",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Lachlan Scherer",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Leila March",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Levi Deboo",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Levi Johnston",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Liam Owen-Turner",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Lily Jinks",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Lochi Nolan",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Logan Holman",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Lucy Waller",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Makenzie Pickering",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Marcus Petts",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Max Allan",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Mitchell Obst",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Nash Reidy",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Natasha Fataaiki",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Nicholas Kleinig",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Oliver Canale",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Olli Hallam",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Ollie Hewetson",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Paige Argent",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Sinead Kain",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Sophie Leis",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Summer Roberts",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Tayla Curnow",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Taylor Dziego",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Tiffany Williss",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Tom Herbert",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Tom Wormald",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Trent Hutchinson",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    },
+    {
+      "name": "Zhoe McGinty",
+      "totalPoints": 40,
+      "hasPrimary": true,
+      "documents": [
+        "Australian Driver Licence / Learner's Permit (40)"
+      ],
+      "reason": "60 points short of 100"
+    }
+  ],
+  "failedFiles": [
+    {
+      "name": "Ben Lucas",
+      "file": "NDIS_Worker_Check_Ben_Lucas.inetloc",
+      "reason": ".inetloc file cannot be verified automatically — check manually"
+    },
+    {
+      "name": "Charlotte Lange",
+      "file": "WWCC_Charlotte_Lange.eml.msg",
+      "reason": ".msg file cannot be verified automatically — check manually"
+    },
+    {
+      "name": "Charlotte Pierson",
+      "file": "NDIS_Worker_Check_Charlotte_Pierson.jfif",
+      "reason": "file is only 658 bytes — likely a placeholder"
+    },
+    {
+      "name": "Conor Fielding",
+      "file": "NDIS_Worker_Orientation_Conor_Fielding.txt.msg",
+      "reason": ".msg file cannot be verified automatically — check manually"
+    },
+    {
+      "name": "Eli Giddings",
+      "file": "dummy_police_screening.pdf",
+      "reason": "filename indicates a placeholder rather than a real document"
+    },
+    {
+      "name": "Eli Giddings",
+      "file": "NDIS_Worker_Check_Eli_Giddings.pdf",
+      "reason": "file is only 2089 bytes — too small for a scanned document"
+    },
+    {
+      "name": "Isabeau Bottroff",
+      "file": "NDIS_Worker_Check_Isabeau_Bottroff.eml.msg",
+      "reason": ".msg file cannot be verified automatically — check manually"
+    },
+    {
+      "name": "Isabeau Bottroff",
+      "file": "WWCC_Isabeau_Bottroff.eml.msg",
+      "reason": ".msg file cannot be verified automatically — check manually"
+    },
+    {
+      "name": "Joel Flower",
+      "file": "NDIS_Worker_Orientation_Joel_Flower.numbers",
+      "reason": ".numbers file cannot be verified automatically — check manually"
+    },
+    {
+      "name": "Joel Schneider",
+      "file": "Police_Check_Result.eml.msg",
+      "reason": ".msg file cannot be verified automatically — check manually"
+    },
+    {
+      "name": "Joel Schneider",
+      "file": "WWCC_Joel_Schneider.eml.msg",
+      "reason": ".msg file cannot be verified automatically — check manually"
+    },
+    {
+      "name": "Liam Owen-Turner",
+      "file": "WWCC_Liam_Owen-Turner.eml.msg",
+      "reason": ".msg file cannot be verified automatically — check manually"
+    },
+    {
+      "name": "Milly Yannakouros",
+      "file": "Drivers_License_Milly_Yannakouros.jp2",
+      "reason": ".jp2 file cannot be verified automatically — check manually"
+    },
+    {
+      "name": "Ollie Hewetson",
+      "file": "Basic_Infection_Ollie_Hewetson.png",
+      "reason": "file is only 381 bytes — likely a placeholder"
+    },
+    {
+      "name": "Ollie Hewetson",
+      "file": "First_Aid_Ollie_Hewetson.png",
+      "reason": "file is only 381 bytes — likely a placeholder"
+    },
+    {
+      "name": "Ollie Hewetson",
+      "file": "NDIS_Worker_Orientation_Ollie_Hewetson.png",
+      "reason": "file is only 381 bytes — likely a placeholder"
+    }
+  ],
+  "duplicateEvidence": [
+    {
+      "name": "Charlotte Lange",
+      "file": "NDIS_Worker_Check_Charlotte_Lange.HEIC",
+      "reason": "identical in size (70904 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Charlotte Lange",
+      "file": "NDIS_Worker_Orientation_Charlotte_Lange.HEIC",
+      "reason": "identical in size (70904 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Dan Martin",
+      "file": "NDIS_Worker_Check_Dan_Martin.pdf",
+      "reason": "identical in size (60982 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Dan Martin",
+      "file": "NDIS_Worker_Orientation_Dan_Martin.pdf",
+      "reason": "identical in size (60982 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Ella Luhrs",
+      "file": "NDIS_Worker_Check_Ella_Luhrs.pdf",
+      "reason": "identical in size (60952 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Ella Luhrs",
+      "file": "NDIS_Worker_Orientation_Ella_Luhrs.pdf",
+      "reason": "identical in size (60952 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Ella Luhrs",
+      "file": "NDIS_Worker_Check_Ella_Luhrs.pdf",
+      "reason": "identical in size (60952 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Ella Luhrs",
+      "file": "NDIS_Worker_Orientation_Ella_Luhrs.pdf",
+      "reason": "identical in size (60952 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Eloise Boesch",
+      "file": "NDIS_Worker_Check_Eloise_Boesch.png",
+      "reason": "identical in size (159651 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Eloise Boesch",
+      "file": "WWCC_Eloise_Boesch.png",
+      "reason": "identical in size (159651 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Emma Lawson",
+      "file": "NDIS_Worker_Check_Emma_Lawson.png",
+      "reason": "identical in size (718697 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Emma Lawson",
+      "file": "NDIS_Worker_Orientation_Emma_Lawson.png",
+      "reason": "identical in size (718697 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Ethan Hearl",
+      "file": "NDIS_Worker_Check_Ethan_Hearl.jpeg",
+      "reason": "identical in size (839422 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Ethan Hearl",
+      "file": "NDIS_Worker_Orientation_Ethan_Hearl.jpeg",
+      "reason": "identical in size (839422 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "George Robertson",
+      "file": "NDIS_Worker_Check_George_Robertson.jpeg",
+      "reason": "identical in size (188119 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "George Robertson",
+      "file": "NDIS_Worker_Orientation_George_Robertson.jpeg",
+      "reason": "identical in size (188119 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Greta Cummins",
+      "file": "NDIS_Worker_Check_Greta_Cummins.pdf",
+      "reason": "identical in size (95717 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Greta Cummins",
+      "file": "NDIS_Worker_Orientation_Greta_Cummins.pdf",
+      "reason": "identical in size (95717 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Jessica Mason",
+      "file": "Basic_Infection_Jessica_Mason.jpeg",
+      "reason": "identical in size (187493 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Jessica Mason",
+      "file": "First_Aid_Jessica_Mason.jpeg",
+      "reason": "identical in size (187493 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Joel Schneider",
+      "file": "NDIS_Worker_Check_Joel_Schneider.pdf",
+      "reason": "identical in size (60947 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Joel Schneider",
+      "file": "NDIS_Worker_Orientation_Joel_Schneider.pdf",
+      "reason": "identical in size (60947 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Kaitlin Hards",
+      "file": "NDIS_Worker_Check_Kaitlin_Hards.png",
+      "reason": "identical in size (500812 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Kaitlin Hards",
+      "file": "NDIS_Worker_Orientation_Kaitlin_Hards.png",
+      "reason": "identical in size (500812 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Liam Owen-Turner",
+      "file": "NDIS_Worker_Check_Liam_Owen-Turner.pdf",
+      "reason": "identical in size (236213 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Liam Owen-Turner",
+      "file": "NDIS_Worker_Orientation_Liam_Owen-Turner.pdf",
+      "reason": "identical in size (236213 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Liam Owen-Turner",
+      "file": "Worker Check.pdf",
+      "reason": "identical in size (236213 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Makenzie Pickering",
+      "file": "NDIS_Worker_Check_Makenzie_Pickering.png",
+      "reason": "identical in size (369427 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Makenzie Pickering",
+      "file": "NDIS_Worker_Orientation_Makenzie_Pickering.png",
+      "reason": "identical in size (369427 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Marcus Petts",
+      "file": "NDIS_Worker_Check_Marcus_Petts.pdf",
+      "reason": "identical in size (174722 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Marcus Petts",
+      "file": "NDIS_Worker_Orientation_Marcus_Petts.pdf",
+      "reason": "identical in size (174722 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Max Allan",
+      "file": "NDIS_Worker_Check_Max_Allan.pdf",
+      "reason": "identical in size (95712 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Max Allan",
+      "file": "NDIS_Worker_Orientation_Max_Allan.pdf",
+      "reason": "identical in size (95712 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Oliver Canale",
+      "file": "NDIS_Worker_Check_Oliver_Canale.pdf",
+      "reason": "identical in size (63556 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Oliver Canale",
+      "file": "NDIS_Worker_Orientation_Oliver_Canale.pdf",
+      "reason": "identical in size (63556 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Paige Argent",
+      "file": "Basic_Infection_Paige_Argent.pdf",
+      "reason": "identical in size (16199 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Paige Argent",
+      "file": "First_Aid_Paige_Argent.pdf",
+      "reason": "identical in size (16199 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Seth Pascoe",
+      "file": "Drivers_License_Seth_Pascoe.jpeg",
+      "reason": "identical in size (1717364 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Seth Pascoe",
+      "file": "Police_Check_Seth_Pascoe.jpeg",
+      "reason": "identical in size (1717364 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Sophie Leis",
+      "file": "NDIS_Worker_Check_Sophie_Leis.png",
+      "reason": "identical in size (608883 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Sophie Leis",
+      "file": "NDIS_Worker_Orientation_Sophie_Leis.png",
+      "reason": "identical in size (608883 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Tom Herbert",
+      "file": "First_Aid_Tom_Herbert.jpeg",
+      "reason": "identical in size (220985 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Tom Herbert",
+      "file": "NDIS_Worker_Check_Tom_Herbert.jpeg",
+      "reason": "identical in size (220985 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Tom Herbert",
+      "file": "NDIS_Worker_Orientation_Tom_Herbert.jpeg",
+      "reason": "identical in size (220985 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Tom Herbert",
+      "file": "WWCC_Tom_Herbert.jpeg",
+      "reason": "identical in size (220985 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Will Heath",
+      "file": "NDIS_Worker_Check_Will_Heath.png",
+      "reason": "identical in size (23306 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Will Heath",
+      "file": "NDIS_Worker_Orientation_Will_Heath.png",
+      "reason": "identical in size (23306 bytes) to a different requirement's document — may be the same file renamed"
+    },
+    {
+      "name": "Will Heath",
+      "file": "WWCC_Will_Heath.png",
+      "reason": "identical in size (23306 bytes) to a different requirement's document — may be the same file renamed"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Alex Trott",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Request renewal of Driver's Licence — Driver's Licence expires in 50 days."
+    },
+    {
+      "name": "Alexandra Kerr",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "Beau Renshaw",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Request renewal of Driver's Licence — Driver's Licence expires in 39 days."
+    },
+    {
+      "name": "Ben Lucas",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Obtain renewed Driver's Licence before the next shift is allocated."
+    },
+    {
+      "name": "Ben Wilkinson",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Review NDIS Worker Orientation and Police Check: Date recorded but no supporting document located."
+    },
+    {
+      "name": "Benjamin Beadle",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "Britney Mackay",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Review Police Check: Date recorded but no supporting document located."
+    },
+    {
+      "name": "Cambell Waller",
+      "staffStatus": "Active",
+      "score": 20,
+      "action": "Obtain renewed First Aid before the next shift is allocated."
+    },
+    {
+      "name": "Charlotte Lange",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Obtain renewed NDIS Worker Check before the next shift is allocated."
+    },
+    {
+      "name": "Chloe Butcher",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Record the expiry date for NDIS Worker Check in Zoho so renewal can be tracked."
+    },
+    {
+      "name": "Christian Nardinocchi",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Review Police Check: Date recorded but no supporting document located."
+    },
+    {
+      "name": "Connor Schatto",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Obtain renewed First Aid before the next shift is allocated."
+    },
+    {
+      "name": "Conor Fielding",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Review NDIS Worker Orientation: Document on file failed verification: .msg file cannot be verified automatically — check manually."
+    },
+    {
+      "name": "Dan Fidler",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Obtain renewed First Aid before the next shift is allocated."
+    },
+    {
+      "name": "Dan Martin",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Review NDIS Worker Check and NDIS Worker Orientation: Document on file failed verification: identical in size (60982 bytes) to a different requirement's document — may be the same file renamed."
+    },
+    {
+      "name": "Eli Giddings",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Review NDIS Worker Check and Police Check: Document on file failed verification: file is only 2089 bytes — too small for a scanned document."
+    },
+    {
+      "name": "Ella Luhrs",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Record the expiry date for NDIS Worker Check in Zoho so renewal can be tracked."
+    },
+    {
+      "name": "Eloise Boesch",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Record the expiry date for NDIS Worker Check in Zoho so renewal can be tracked."
+    },
+    {
+      "name": "Emma Lawson",
+      "staffStatus": "Active",
+      "score": 30,
+      "action": "Obtain renewed Driver's Licence before the next shift is allocated."
+    },
+    {
+      "name": "Ethan Hearl",
+      "staffStatus": "Active",
+      "score": 10,
+      "action": "Request renewal of Driver's Licence and WWCC — Driver's Licence expires in 39 days."
+    },
+    {
+      "name": "Evie O'Brien",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "George Robertson",
+      "staffStatus": "Active",
+      "score": 30,
+      "action": "Review NDIS Worker Check, NDIS Worker Orientation and Police Check: Document on file failed verification: identical in size (188119 bytes) to a different requirement's document — may be the same file renamed."
+    },
+    {
+      "name": "Greg Knappstein",
+      "staffStatus": "Active",
+      "score": 30,
+      "action": "Collect NDIS Worker Check and file in the staff folder."
+    },
+    {
+      "name": "Greta Cummins",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Record the expiry date for NDIS Worker Check in Zoho so renewal can be tracked."
+    },
+    {
+      "name": "Harrison Geater-Johnson",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Review Police Check: Date recorded but no supporting document located."
+    },
+    {
+      "name": "Isabeau Bottroff",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Record the expiry date for NDIS Worker Check in Zoho so renewal can be tracked."
+    },
+    {
+      "name": "Jacob Oliver",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "Jai Chapman",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "James Powell",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Review Police Check: Date recorded but no supporting document located."
+    },
+    {
+      "name": "Jasmine Smith",
+      "staffStatus": "Active",
+      "score": 20,
+      "action": "Obtain renewed WWCC and First Aid before the next shift is allocated."
+    },
+    {
+      "name": "Jess Harvey",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Record the expiry date for NDIS Worker Check in Zoho so renewal can be tracked."
+    },
+    {
+      "name": "Jessica Mason",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Review First Aid: Document on file failed verification: identical in size (187493 bytes) to a different requirement's document — may be the same file renamed."
+    },
+    {
+      "name": "Jett Hutchinson",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "Joel Flower",
+      "staffStatus": "Active",
+      "score": 30,
+      "action": "Obtain renewed Driver's Licence before the next shift is allocated."
+    },
+    {
+      "name": "Joel Schneider",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Review WWCC and Police Check: Document on file failed verification: .msg file cannot be verified automatically — check manually."
+    },
+    {
+      "name": "Jordan Stephens",
+      "staffStatus": "Active",
+      "score": 10,
+      "action": "Obtain renewed Driver's Licence before the next shift is allocated."
+    },
+    {
+      "name": "Jordan Townsend",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Obtain renewed WWCC before the next shift is allocated."
+    },
+    {
+      "name": "Kai Miller",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Obtain renewed Driver's Licence before the next shift is allocated."
+    },
+    {
+      "name": "Kurtis Ridley",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Obtain renewed WWCC before the next shift is allocated."
+    },
+    {
+      "name": "Kytel Jackson",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "Lara Martin",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Record the expiry date for WWCC and First Aid in Zoho so renewal can be tracked."
+    },
+    {
+      "name": "Leila March",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Request renewal of Driver's Licence — Driver's Licence expires in 73 days."
+    },
+    {
+      "name": "Levi Deboo",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Review Police Check: Date recorded but no supporting document located."
+    },
+    {
+      "name": "Levi Johnston",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Request renewal of Driver's Licence — Driver's Licence expires in 80 days."
+    },
+    {
+      "name": "Liam Owen-Turner",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Review NDIS Worker Check and NDIS Worker Orientation: Document on file failed verification: identical in size (236213 bytes) to a different requirement's document — may be the same file renamed."
+    },
+    {
+      "name": "Lilah Hill",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "Logan Holman",
+      "staffStatus": "Active",
+      "score": 60,
+      "action": "Record the expiry date for NDIS Worker Check in Zoho so renewal can be tracked."
+    },
+    {
+      "name": "Lucy Waller",
+      "staffStatus": "Active",
+      "score": 10,
+      "action": "Obtain renewed WWCC and First Aid before the next shift is allocated."
+    },
+    {
+      "name": "Lucy Winter",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "Macayla Marner",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "Makenzie Pickering",
+      "staffStatus": "Active",
+      "score": 60,
+      "action": "Review NDIS Worker Check: Document on file failed verification: identical in size (369427 bytes) to a different requirement's document — may be the same file renamed."
+    },
+    {
+      "name": "Marcus Petts",
+      "staffStatus": "Active",
+      "score": 20,
+      "action": "Obtain renewed NDIS Worker Check and Driver's Licence before the next shift is allocated."
+    },
+    {
+      "name": "Matilda Allert",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "Max Allan",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Record the expiry date for NDIS Worker Check in Zoho so renewal can be tracked."
+    },
+    {
+      "name": "Milly Yannakouros",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Review Driver's Licence: Document on file failed verification: .jp2 file cannot be verified automatically — check manually."
+    },
+    {
+      "name": "Mitchell Obst",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Obtain renewed Driver's Licence before the next shift is allocated."
+    },
+    {
+      "name": "Nash Reidy",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Obtain renewed First Aid before the next shift is allocated."
+    },
+    {
+      "name": "Natasha Fataaiki",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Review Police Check: Date recorded but no supporting document located."
+    },
+    {
+      "name": "Ned Kennett",
+      "staffStatus": "Active",
+      "score": 10,
+      "action": "Collect NDIS Worker Check, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "Oliver Canale",
+      "staffStatus": "Active",
+      "score": 20,
+      "action": "Obtain renewed First Aid before the next shift is allocated."
+    },
+    {
+      "name": "Olli Hallam",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Record the expiry date for NDIS Worker Check in Zoho so renewal can be tracked."
+    },
+    {
+      "name": "Ollie Hewetson",
+      "staffStatus": "Active",
+      "score": 30,
+      "action": "Record the expiry date for NDIS Worker Check in Zoho so renewal can be tracked."
+    },
+    {
+      "name": "Paige Argent",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Review First Aid: Document on file failed verification: identical in size (16199 bytes) to a different requirement's document — may be the same file renamed."
+    },
+    {
+      "name": "Seamus Quinn O'Reilly",
+      "staffStatus": "Active",
+      "score": 20,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation and Driver's Licence and file in the staff folder."
+    },
+    {
+      "name": "Seb Sobels",
+      "staffStatus": "Active",
+      "score": 30,
+      "action": "Obtain renewed WWCC and Driver's Licence before the next shift is allocated."
+    },
+    {
+      "name": "Seth Pascoe",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Request renewal of First Aid — First Aid expires in 9 days."
+    },
+    {
+      "name": "Simmon Crellin",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "Sinead Kain",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Obtain renewed Driver's Licence before the next shift is allocated."
+    },
+    {
+      "name": "Sophie Leis",
+      "staffStatus": "Active",
+      "score": 10,
+      "action": "Obtain renewed Driver's Licence before the next shift is allocated."
+    },
+    {
+      "name": "Summer",
+      "staffStatus": "Onboarding",
+      "score": 0,
+      "action": "Collect NDIS Worker Check, NDIS Worker Orientation, WWCC, Police Check, Driver's Licence and First Aid and file in the staff folder."
+    },
+    {
+      "name": "Summer Roberts",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Obtain renewed NDIS Worker Check before the next shift is allocated."
+    },
+    {
+      "name": "Taylor Dziego",
+      "staffStatus": "Active",
+      "score": 50,
+      "action": "Collect NDIS Worker Check and file in the staff folder."
+    },
+    {
+      "name": "Tiffany Williss",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Request renewal of Driver's Licence — Driver's Licence expires in 66 days."
+    },
+    {
+      "name": "Tom Herbert",
+      "staffStatus": "Active",
+      "score": 10,
+      "action": "Obtain renewed WWCC and First Aid before the next shift is allocated."
+    },
+    {
+      "name": "Tom Luck",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Review NDIS Worker Orientation and Police Check: Date recorded but no supporting document located."
+    },
+    {
+      "name": "Tom Wormald",
+      "staffStatus": "Active",
+      "score": 40,
+      "action": "Review NDIS Worker Orientation and Police Check: Date recorded but no supporting document located."
+    },
+    {
+      "name": "Will Heath",
+      "staffStatus": "Active",
+      "score": 10,
+      "action": "Obtain renewed WWCC and First Aid before the next shift is allocated."
+    },
+    {
+      "name": "Will Kennett",
+      "staffStatus": "Active",
+      "score": 30,
+      "action": "Request renewal of First Aid — First Aid expires in 19 days."
+    }
+  ],
+  "reconciliation": {
+    "zohoRecords": 94,
+    "excludedTestRecords": [
+      {
+        "staffId": "6760161000015103007",
+        "name": "Aurelio test",
+        "staffStatus": "Active",
+        "reason": "Name identifies this as a test record, not a staff member"
+      }
+    ],
+    "matchedStaff": 80,
+    "unmatchedStaff": [
+      {
+        "staffId": "6760161000010973002",
+        "name": "Summer",
+        "staffStatus": "Onboarding"
+      },
+      {
+        "staffId": "6760161000008931009",
+        "name": "Matilda Allert",
+        "staffStatus": "Onboarding"
+      },
+      {
+        "staffId": "6760161000015023049",
+        "name": "Benjamin Beadle",
+        "staffStatus": "Onboarding"
+      },
+      {
+        "staffId": "6760161000010302004",
+        "name": "Jai Chapman",
+        "staffStatus": "Onboarding"
+      },
+      {
+        "staffId": "6760161000015023047",
+        "name": "Simmon Crellin",
+        "staffStatus": "Onboarding"
+      },
+      {
+        "staffId": "6760161000014839003",
+        "name": "Lilah Hill",
+        "staffStatus": "Onboarding"
+      },
+      {
+        "staffId": "6760161000015000013",
+        "name": "Jett Hutchinson",
+        "staffStatus": "Onboarding"
+      },
+      {
+        "staffId": "6760161000011837001",
+        "name": "Kytel Jackson",
+        "staffStatus": "Onboarding"
+      },
+      {
+        "staffId": "6760161000008214041",
+        "name": "Alexandra Kerr",
+        "staffStatus": "Onboarding"
+      },
+      {
+        "staffId": "6760161000013040003",
+        "name": "Macayla Marner",
+        "staffStatus": "Onboarding"
+      },
+      {
+        "staffId": "6760161000004104070",
+        "name": "Evie O'Brien",
+        "staffStatus": "Onboarding"
+      },
+      {
+        "staffId": "6760161000012328074",
+        "name": "Jacob Oliver",
+        "staffStatus": "Onboarding"
+      },
+      {
+        "staffId": "6760161000004122006",
+        "name": "Lucy Winter",
+        "staffStatus": "Onboarding"
+      }
+    ],
+    "unmatchedFolders": [
+      {
+        "folder": "Ada Harvey",
+        "fileCount": 6
+      },
+      {
+        "folder": "Airlie-Jaye Perkins",
+        "fileCount": 9
+      },
+      {
+        "folder": "Alex Miffsud",
+        "fileCount": 3
+      },
+      {
+        "folder": "Andy Lee",
+        "fileCount": 7
+      },
+      {
+        "folder": "Anthony Galea",
+        "fileCount": 8
+      },
+      {
+        "folder": "Aryan Sareen",
+        "fileCount": 2
+      },
+      {
+        "folder": "Bree Sheppard",
+        "fileCount": 8
+      },
+      {
+        "folder": "Carlie Beckman",
+        "fileCount": 10
+      },
+      {
+        "folder": "Casey Bailey",
+        "fileCount": 5
+      },
+      {
+        "folder": "Cayle Beck",
+        "fileCount": 10
+      },
+      {
+        "folder": "Charlie Cook",
+        "fileCount": 8
+      },
+      {
+        "folder": "Freya Hazel Woodall",
+        "fileCount": 3
+      },
+      {
+        "folder": "Hannah Martin",
+        "fileCount": 9
+      },
+      {
+        "folder": "Henry Adam Bleby-Williams",
+        "fileCount": 3
+      },
+      {
+        "folder": "Holly Wadlow",
+        "fileCount": 7
+      },
+      {
+        "folder": "Leila Carr",
+        "fileCount": 10
+      },
+      {
+        "folder": "Liam Crease",
+        "fileCount": 5
+      },
+      {
+        "folder": "Jason Roberts",
+        "fileCount": 8
+      },
+      {
+        "folder": "Jed Woolford",
+        "fileCount": 6
+      },
+      {
+        "folder": "Jordan Cirocco",
+        "fileCount": 7
+      },
+      {
+        "folder": "Kalan Knox",
+        "fileCount": 9
+      },
+      {
+        "folder": "Kate Manning",
+        "fileCount": 9
+      },
+      {
+        "folder": "Laura Warland",
+        "fileCount": 9
+      },
+      {
+        "folder": "Liana Blefari",
+        "fileCount": 9
+      },
+      {
+        "folder": "Maddy Nagle",
+        "fileCount": 8
+      },
+      {
+        "folder": "Nicholas Shute",
+        "fileCount": 13
+      },
+      {
+        "folder": "Rex Monger",
+        "fileCount": 8
+      },
+      {
+        "folder": "Rory Hackett",
+        "fileCount": 3
+      },
+      {
+        "folder": "Ruby Pengelly",
+        "fileCount": 7
+      },
+      {
+        "folder": "Sam Ross",
+        "fileCount": 2
+      },
+      {
+        "folder": "Sarah Cavaiuolo",
+        "fileCount": 3
+      },
+      {
+        "folder": "Shelby Grantham",
+        "fileCount": 7
+      },
+      {
+        "folder": "Sylvana Willcocks",
+        "fileCount": 7
+      },
+      {
+        "folder": "Tahj Hill",
+        "fileCount": 9
+      },
+      {
+        "folder": "Trent Hamilton",
+        "fileCount": 12
+      },
+      {
+        "folder": "Tully Kennett",
+        "fileCount": 7
+      },
+      {
+        "folder": "Will Nash",
+        "fileCount": 4
+      },
+      {
+        "folder": "Jack Connell",
+        "fileCount": 8
+      },
+      {
+        "folder": "Jack Green",
+        "fileCount": 1
+      },
+      {
+        "folder": "Jack Keith Williams",
+        "fileCount": 8
+      }
+    ],
+    "ambiguous": [],
+    "duplicateFolderConflicts": [],
+    "lowConfidenceMatches": [
+      {
+        "name": "Christian Nardinocchi",
+        "folders": [
+          "Christian Nardocci"
+        ],
+        "confidence": 60
+      },
+      {
+        "name": "Dan Fidler",
+        "folders": [
+          "Daniel Fidler"
+        ],
+        "confidence": 80
+      },
+      {
+        "name": "Emilie Haylock",
+        "folders": [
+          "Emily Haylock"
+        ],
+        "confidence": 70
+      }
+    ]
+  }
+}

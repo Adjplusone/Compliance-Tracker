@@ -162,10 +162,21 @@ const ZOHO_FIELD_WHITELIST = [
 const FORBIDDEN_KEY_PATTERN =
   /tfn|bsb|account|super|smsf|apra|dob|date_of_birth|birth|address|street|suburb|\bcity\b|postcode|zip|emergency|phone|email|biography|member|salutation|gender/i;
 
+/**
+ * Records that are test data rather than people.
+ *
+ * Matches "test" or "testing" as a WHOLE word in either name field, so the
+ * Zoho record "Aurelio test" is excluded while genuine names that merely
+ * contain the letters (Testa, Contestabile) are not. Excluded records are
+ * reported, never dropped silently.
+ */
+const TEST_RECORD_PATTERN = /(^|[^a-z])test(ing)?([^a-z]|$)/i;
+
 /** Reference fields are used for existence checks only, never rendered. */
 const REF_FIELDS = REQUIREMENTS.map((r) => r.refField).filter(Boolean);
 
 module.exports = {
+  TEST_RECORD_PATTERN,
   STATUS,
   STATUS_LABEL,
   TRACK,

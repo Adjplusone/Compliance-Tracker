@@ -129,3 +129,37 @@ test('folder slices that overlap are de-duplicated', () => {
   const names = ds.staff.flatMap((s) => s.folderNames);
   equal(names.length, new Set(names).size, 'no folder may be attached twice');
 });
+
+test('a weak name match cannot steal a folder already claimed confidently', () => {
+  // "Lucy Winter" scores 60 against the folder "Lucy Waller" — same first
+  // name, surnames three edits apart. She must not inherit another person's
+  // compliance documents.
+  const winter = ds.staff.find((s) => s.name === 'Lucy Winter');
+  const waller = ds.staff.find((s) => s.name === 'Lucy Waller');
+  if (winter && waller) {
+    equal(waller.folderNames.includes('Lucy Waller'), true, 'Lucy Waller keeps her own folder');
+    equal(winter.folderNames.includes('Lucy Waller'), false, 'Lucy Winter must not take it');
+  }
+  // No folder may be attached to two different staff members.
+  const owner = new Map();
+  for (const s of ds.staff) {
+    for (const f of s.folderNames) {
+      assert(!owner.has(f), `folder "${f}" claimed by both ${owner.get(f)} and ${s.name}`);
+      owner.set(f, s.name);
+    }
+  }
+});
+
+test('test records are excluded from the dataset but reported', () => {
+  const { TEST_RECORD_PATTERN } = require('../src/config');
+  // Excluded from everything the user sees.
+  for (const s of ds.staff) {
+    assert(!TEST_RECORD_PATTERN.test(s.name), `test record reached the dataset: ${s.name}`);
+  }
+  // A genuine name that merely contains the letters is kept.
+  equal(TEST_RECORD_PATTERN.test('Aurelio test'), true);
+  equal(TEST_RECORD_PATTERN.test('Test User'), true);
+  equal(TEST_RECORD_PATTERN.test('TESTING account'), true);
+  equal(TEST_RECORD_PATTERN.test('Maria Testa'), false, 'Testa is a real surname');
+  equal(TEST_RECORD_PATTERN.test('Contestabile'), false);
+});

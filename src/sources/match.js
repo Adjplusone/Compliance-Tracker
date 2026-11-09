@@ -110,37 +110,65 @@ function matchStaffToFolders(staff, folders) {
   }));
 
   const used = new Map(); // folder index -> staff index
-  const matched = [];
+  const assigned = new Map(); // staff index -> {folderIndices, confidence, folderNames}
   const ambiguous = [];
 
-  staffEntries.forEach((entry, si) => {
-    const candidates = [];
+  /*
+   * Matching runs in two passes, and a folder can only be claimed once.
+   *
+   * Without this, a weak match steals a folder that belongs to someone else:
+   * "Lucy Winter" scores 60 against the folder "Lucy Waller" (same first name,
+   * surnames three edits apart) and would inherit another person's compliance
+   * documents wholesale. Confident matches are therefore settled first, and
+   * the fuzzy pass only sees folders nobody else has claimed.
+   */
+  const CONFIDENT = 90;
+
+  const candidatesFor = (name, skipClaimed) => {
+    const out = [];
     folders.forEach((f, fi) => {
-      const sc = score(entry.displayName, f.folder);
-      if (sc !== null) candidates.push({ fi, score: sc, folder: f.folder });
+      if (skipClaimed && used.has(fi)) return;
+      const sc = score(name, f.folder);
+      if (sc !== null) out.push({ fi, score: sc, folder: f.folder });
     });
-    candidates.sort((a, b) => b.score - a.score);
+    return out.sort((a, b) => b.score - a.score);
+  };
 
-    // Duplicate folders for one person (e.g. `Ella Luhrs` + `Luhrs, Ella`)
-    // both score 100. Take every top-scoring candidate and merge them.
-    const best = candidates.length ? candidates[0].score : null;
-    const take = candidates.filter((c) => c.score === best);
-
-    if (!take.length) {
-      matched.push({ staffIndex: si, folderIndices: [], confidence: null, folderNames: [] });
-      return;
-    }
-    if (best < 90 && take.length > 1) {
-      ambiguous.push({ staff: entry.displayName, candidates: take.map((c) => c.folder), score: best });
-    }
+  const claim = (si, take, best) => {
     for (const c of take) used.set(c.fi, si);
-    matched.push({
-      staffIndex: si,
+    assigned.set(si, {
       folderIndices: take.map((c) => c.fi),
       confidence: best,
       folderNames: take.map((c) => c.folder),
     });
+  };
+
+  // Pass 1 — exact and near-exact matches settle first.
+  staffEntries.forEach((entry, si) => {
+    const candidates = candidatesFor(entry.displayName, false)
+      .filter((c) => c.score >= CONFIDENT && !used.has(c.fi));
+    if (!candidates.length) return;
+    const best = candidates[0].score;
+    // One person can own two folders (`Ella Luhrs` and `Luhrs, Ella`); both
+    // score the same, so take every top-scoring candidate and merge them.
+    claim(si, candidates.filter((c) => c.score === best), best);
   });
+
+  // Pass 2 — approximate matches, over folders nobody has claimed.
+  staffEntries.forEach((entry, si) => {
+    if (assigned.has(si)) return;
+    const candidates = candidatesFor(entry.displayName, true);
+    if (!candidates.length) return;
+    const best = candidates[0].score;
+    const take = candidates.filter((c) => c.score === best);
+    if (take.length > 1) {
+      ambiguous.push({ staff: entry.displayName, candidates: take.map((c) => c.folder), score: best });
+    }
+    claim(si, take, best);
+  });
+
+  const matched = staffEntries.map((_, si) =>
+    ({ staffIndex: si, ...(assigned.get(si) || { folderIndices: [], confidence: null, folderNames: [] }) }));
 
   const results = matched.map((m) => {
     const entry = staffEntries[m.staffIndex];

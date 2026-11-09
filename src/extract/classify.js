@@ -23,7 +23,7 @@ const MIN_FILE_BYTES = 1024;    // at or below this: a stub, not a document
 const SMALL_FILE_BYTES = 5120;  // below this: too small for a scanned document
 
 const DOC_EXTENSIONS = new Set([
-  'pdf', 'png', 'jpg', 'jpeg', 'heic', 'heif', 'webp', 'gif', 'tif', 'tiff',
+  'pdf', 'png', 'jpg', 'jpeg', 'jfif', 'heic', 'heif', 'webp', 'gif', 'tif', 'tiff',
   'doc', 'docx', 'odt', 'rtf',
 ]);
 
@@ -119,7 +119,12 @@ function verifyFile(file) {
   const name = file.name || '';
   const ext = extensionOf(name);
   if (!ext) return { valid: false, reason: 'file has no extension' };
-  if (!DOC_EXTENSIONS.has(ext)) return { valid: false, reason: `unsupported file type .${ext}` };
+  if (!DOC_EXTENSIONS.has(ext)) {
+    // An Outlook .msg or Apple .numbers file may well hold the real clearance;
+    // it simply cannot be verified from here. Say that, rather than implying
+    // the document is invalid.
+    return { valid: false, reason: `.${ext} file cannot be verified automatically — check manually` };
+  }
   if (PLACEHOLDER_NAME.test(name)) {
     return { valid: false, reason: 'filename indicates a placeholder rather than a real document' };
   }
