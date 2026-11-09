@@ -1,0 +1,431 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap">
+<style>
+/* Layout: a header band, a row of totals, a requirement strip, then the wide
+   staff table. Mid-tone surfaces throughout — a soft blue-grey ground rather
+   than white, navy-tinted charcoal rather than black, so a long reading
+   session over 94 rows stays comfortable. Palette taken from the PlusOne
+   Mentoring site: navy #06316a, blue #0274bd, rose #cc3366. */
+.po {
+  --brand:      #06316a;
+  --brand-2:    #0274bd;
+  --accent:     #cc3366;
+
+  --bg:         #e9eef5;
+  --surface:    #f5f8fc;
+  --surface-2:  #dde5f0;
+  --fg:         #1d2838;
+  --muted:      #56677f;
+  --line:       #c6d2e2;
+
+  --ok:         #2d7d57;
+  --warn:       #b4761a;
+  --bad:        #b53a2d;
+  --review:     #2f6fb0;
+  --gone:       #6f7f96;
+
+  --display: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --body: "Open Sans", -apple-system, "Segoe UI", system-ui, sans-serif;
+
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--body);
+  font-size: 14px;
+  line-height: 1.5;
+  padding-block: 20px 36px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .po {
+    --bg:        #1c2533;
+    --surface:   #243041;
+    --surface-2: #2c3a4d;
+    --fg:        #dde6f1;
+    --muted:     #94a6bd;
+    --line:      #3a4a60;
+    --brand:     #8fbce8;
+    --brand-2:   #58a5dc;
+    --accent:    #ef8fb1;
+    --ok:        #57bd87;
+    --warn:      #dda046;
+    --bad:       #e8796b;
+    --review:    #79b2e8;
+    --gone:      #8a9bb2;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] .po {
+  --bg:        #1c2533;
+  --surface:   #243041;
+  --surface-2: #2c3a4d;
+  --fg:        #dde6f1;
+  --muted:     #94a6bd;
+  --line:      #3a4a60;
+  --brand:     #8fbce8;
+  --brand-2:   #58a5dc;
+  --accent:    #ef8fb1;
+  --ok:        #57bd87;
+  --warn:      #dda046;
+  --bad:       #e8796b;
+  --review:    #79b2e8;
+  --gone:      #8a9bb2;
+  color-scheme: dark;
+}
+
+.po * { box-sizing: border-box; }
+.po-wrap { max-width: 1400px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+
+.po-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 16px; }
+.po-title { font-family: var(--display); font-weight: 700; font-size: clamp(20px, 3vw, 27px);
+  letter-spacing: -0.02em; margin: 0; color: var(--brand); text-wrap: balance; }
+.po-sub { color: var(--muted); font-size: 13px; margin: 0; }
+.po-rule { height: 3px; border-radius: 2px; background: linear-gradient(90deg, var(--brand), var(--brand-2) 55%, var(--accent)); }
+
+.po-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.po-tile { background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.po-tile-n { font-family: var(--display); font-weight: 600; font-size: 28px; line-height: 1.1;
+  font-variant-numeric: tabular-nums; }
+.po-tile-l { font-size: 12px; color: var(--muted); }
+.po-tile.is-bad  .po-tile-n { color: var(--bad); }
+.po-tile.is-warn .po-tile-n { color: var(--warn); }
+.po-tile.is-rev  .po-tile-n { color: var(--review); }
+
+.po-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; min-width: 0; }
+.po-card-h { padding: 13px 16px; border-bottom: 1px solid var(--line); display: flex;
+  flex-wrap: wrap; gap: 6px 14px; align-items: baseline; }
+.po-card-t { font-family: var(--display); font-weight: 600; font-size: 15px; margin: 0; }
+.po-card-n { font-size: 12px; color: var(--muted); }
+
+.po-scroll { overflow-x: auto; }
+.po-table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+.po-table th, .po-table td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--line);
+  white-space: nowrap; vertical-align: top; }
+.po-table thead th { position: sticky; top: 0; background: var(--surface-2); font-family: var(--display);
+  font-weight: 600; font-size: 11px; letter-spacing: 0.03em; text-transform: uppercase;
+  color: var(--muted); z-index: 1; cursor: pointer; user-select: none; }
+.po-table thead th:hover { color: var(--fg); }
+.po-table thead th.po-sorted { color: var(--brand-2); }
+.po-table tbody tr:hover { background: var(--surface-2); }
+.po-name { font-weight: 600; position: sticky; left: 0; background: var(--surface); }
+.po-table tbody tr:hover .po-name { background: var(--surface-2); }
+.po-track { font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted);
+  font-weight: 400; display: block; margin-top: 2px; }
+.po-num { font-variant-numeric: tabular-nums; text-align: right; }
+.po-notes { white-space: normal; min-width: 240px; max-width: 420px; color: var(--muted); font-size: 11.5px; }
+
+.po-s-ok { color: var(--ok); } .po-s-warn { color: var(--warn); } .po-s-bad { color: var(--bad); }
+.po-s-rev { color: var(--review); } .po-s-gone { color: var(--gone); }
+
+.po-score { display: inline-flex; align-items: center; gap: 7px; }
+.po-meter { width: 46px; height: 6px; border-radius: 3px; background: var(--surface-2); overflow: hidden; flex: none; }
+.po-meter i { display: block; height: 100%; background: var(--brand-2); }
+
+.po-bar { display: flex; height: 16px; border-radius: 4px; overflow: hidden; background: var(--surface-2); min-width: 120px; }
+.po-bar span { display: block; }
+.po-legend { display: flex; flex-wrap: wrap; gap: 5px 14px; font-size: 11.5px; color: var(--muted); padding: 11px 16px 0; }
+.po-legend b { font-weight: 600; color: var(--fg); }
+.po-key { display: inline-flex; align-items: center; gap: 5px; }
+.po-dot { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
+
+.po-note { font-size: 12px; color: var(--muted); padding: 11px 16px; border-top: 1px solid var(--line);
+  background: var(--surface-2); border-radius: 0 0 9px 9px; }
+.po-note strong { color: var(--fg); font-weight: 600; }
+.po-ph { padding: 26px 16px; color: var(--muted); font-size: 13px; }
+
+@media (max-width: 560px) {
+  .po-name { position: static; }
+  .po-tile-n { font-size: 23px; }
+}
+</style>
+
+<div class="po"><div class="po-wrap">
+  <header class="po-head" id="header">
+    <h1 class="po-title">Staff Compliance</h1>
+    <p class="po-sub" id="asof">PlusOne Mentoring · NDIS provider 4050002983</p>
+  </header>
+  <div class="po-rule"></div>
+
+  <section class="po-tiles" id="totals"></section>
+
+  <section class="po-card" id="requirements">
+    <div class="po-card-h">
+      <h2 class="po-card-t">Status by requirement</h2>
+      <span class="po-card-n">One-time requirements are verified by document and date; renewal requirements are tracked to expiry.</span>
+    </div>
+    <div class="po-legend" id="legend"></div>
+    <div class="po-scroll"><table class="po-table" id="req-table"></table></div>
+  </section>
+
+  <section class="po-card" id="staff">
+    <div class="po-card-h">
+      <h2 class="po-card-t">Staff register</h2>
+      <span class="po-card-n" id="staff-count"></span>
+    </div>
+    <div class="po-scroll"><table class="po-table" id="staff-table"></table></div>
+    <p class="po-note"><strong>🔍 Requires review is not a failure.</strong> It means the record is
+    incomplete — most often an expiry date that was never entered, or a document that could not be
+    verified. <strong>A 100-point total below 100 means the identification evidence is not on file</strong>,
+    not that identity was never verified.</p>
+  </section>
+</div></div>
+
+<script>
+/* Column order for the staff register. One-time requirements are grouped
+   together and labelled, so a completion date is never misread as an overdue
+   renewal. */
+window.PO = (function () {
+  const ONE_TIME = ['NDIS Worker Orientation', 'Police Check', 'Infection Control'];
+  const RENEWAL = ['NDIS Worker Check', 'WWCC', "Driver's Licence", 'First Aid', 'CPR',
+                   'Vehicle Registration', 'Vehicle Insurance'];
+  const COLS = ['Staff Name', 'Status', ...ONE_TIME, ...RENEWAL, '100 Point ID Status',
+                'Compliance Score (%)', 'Expiry Alerts', 'Follow-up Required', 'Notes'];
+  const NUMERIC = new Set(['Compliance Score (%)', 'Total ID Points']);
+
+  const STATUS_CLASS = { '✅': 'po-s-ok', '⚠️': 'po-s-warn', '❌': 'po-s-bad', '🔍': 'po-s-rev', '⬜': 'po-s-gone' };
+  const STATUS_VAR = { '✅': 'ok', '⚠️': 'warn', '❌': 'bad', '🔍': 'review', '⬜': 'gone' };
+  const STATUS_NAME = { '✅': 'Compliant', '⚠️': 'Expiring soon', '❌': 'Expired',
+                        '🔍': 'Requires review', '⬜': 'Missing' };
+  const ORDER = ['❌', '⚠️', '🔍', '⬜', '✅'];
+
+  const glyphOf = (v) => {
+    const s = String(v == null ? '' : v).trim();
+    for (const g of Object.keys(STATUS_CLASS)) if (s.startsWith(g)) return g;
+    return null;
+  };
+  return { ONE_TIME, RENEWAL, COLS, NUMERIC, STATUS_CLASS, STATUS_VAR, STATUS_NAME, ORDER, glyphOf };
+})();
+</script>
+
+<script>
+/* Totals. Each is a declared calculation with its own id, so a reader can see
+   how the figure was reached rather than taking a script's word for it. */
+dash.calc('total_staff', {
+  inputs: ['staff_compliance'],
+  title: 'Staff reviewed',
+  description: 'Number of staff records reviewed (Active and Onboarding).',
+  fn: (staff) => staff.length,
+});
+dash.calc('total_followup', {
+  inputs: ['staff_compliance'],
+  title: 'Staff requiring follow-up',
+  description: 'Staff with at least one expired, expiring, missing or unverified requirement.',
+  fn: (staff) => staff.filter((r) => r['Follow-up Required'] === 'Yes').length,
+});
+dash.calc('total_expired', {
+  inputs: ['staff_compliance'],
+  title: 'Staff with an expired requirement',
+  description: 'Staff where at least one tracked requirement has passed its expiry date.',
+  fn: (staff) => staff.filter((r) => window.PO.RENEWAL.some((c) => String(r[c] || '').startsWith('❌'))).length,
+});
+dash.calc('total_expiring', {
+  inputs: ['staff_compliance'],
+  title: 'Staff expiring within 90 days',
+  description: 'Staff with a renewal requirement due within the next 90 days.',
+  fn: (staff) => staff.filter((r) => window.PO.RENEWAL.some((c) => String(r[c] || '').startsWith('⚠️'))).length,
+});
+dash.calc('total_no_expiry', {
+  inputs: ['staff_compliance'],
+  title: 'Renewals that cannot be tracked',
+  description: 'Staff holding evidence for a renewal requirement where no expiry date is recorded, so the renewal cannot be monitored.',
+  fn: (staff) => staff.filter((r) => window.PO.RENEWAL.some((c) => String(r[c] || '').startsWith('🔍'))).length,
+});
+dash.calc('total_id_short', {
+  inputs: ['staff_compliance'],
+  title: '100-point ID not evidenced',
+  description: 'Staff whose filed identification documents total under 100 points, or who have no Primary document on file. Indicates evidence is not filed, not that identity was unverified.',
+  fn: (staff) => staff.filter((r) => r['Meets 100 Point Requirement'] === 'No').length,
+});
+</script>
+
+<script>
+(function () {
+  const { COLS, NUMERIC, STATUS_CLASS, STATUS_VAR, STATUS_NAME, ORDER, ONE_TIME, glyphOf } = window.PO;
+  const $ = (id) => document.getElementById(id);
+  const clear = (el) => { while (el.firstChild) el.removeChild(el.firstChild); };
+  const el = (tag, cls, text) => {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = String(text); // never innerHTML: data is untrusted
+    return n;
+  };
+
+  let sortCol = 'Staff Name';
+  let sortDir = 1;
+
+  const TILES = [
+    { id: 'total_staff',     label: 'Staff reviewed',            mood: '' },
+    { id: 'total_followup',  label: 'Need follow-up',            mood: 'is-warn' },
+    { id: 'total_expired',   label: 'Have an expired item',      mood: 'is-bad' },
+    { id: 'total_expiring',  label: 'Expiring within 90 days',   mood: 'is-warn' },
+    { id: 'total_no_expiry', label: 'Renewal date not recorded', mood: 'is-rev' },
+    { id: 'total_id_short',  label: '100-point ID not on file',  mood: 'is-rev' },
+  ];
+
+  function renderTotals() {
+    const wrap = $('totals');
+    clear(wrap);
+    for (const t of TILES) {
+      const d = dash.data(t.id);
+      const card = el('div', `po-tile ${t.mood}`.trim());
+      const n = el('div', 'po-tile-n', d.status === 'ok' && d.data != null ? d.data : '—');
+      n.setAttribute('data-source', t.id);
+      card.appendChild(n);
+      card.appendChild(el('div', 'po-tile-l', t.label));
+      wrap.appendChild(card);
+    }
+  }
+
+  function renderLegend() {
+    const wrap = $('legend');
+    clear(wrap);
+    for (const g of ORDER) {
+      const k = el('span', 'po-key');
+      const dot = el('span', 'po-dot');
+      dot.style.background = `var(--${STATUS_VAR[g]})`;
+      k.appendChild(dot);
+      k.appendChild(el('b', null, g));
+      k.appendChild(el('span', null, STATUS_NAME[g]));
+      wrap.appendChild(k);
+    }
+  }
+
+  function renderRequirements() {
+    const d = dash.data('requirement_tally');
+    const table = $('req-table');
+    clear(table);
+    if (d.status !== 'ok' || !d.data.length) {
+      table.appendChild(el('caption', 'po-ph', d.status === 'loading' ? 'Loading…' : '—'));
+      return;
+    }
+    table.setAttribute('data-source', 'requirement_tally');
+    table.setAttribute('data-row-key', 'Requirement');
+
+    const cols = ['Requirement', 'Track', 'Compliant', 'Expiring Soon', 'Expired', 'Requires Review', 'Missing'];
+    const thead = el('thead'); const hr = el('tr');
+    for (const c of cols) {
+      const th = el('th', null, c);
+      th.setAttribute('data-field', c);
+      hr.appendChild(th);
+    }
+    hr.appendChild(el('th', null, 'Spread'));
+    thead.appendChild(hr); table.appendChild(thead);
+
+    const tbody = el('tbody');
+    for (const row of d.data) {
+      const tr = el('tr');
+      for (const c of cols) {
+        const td = el('td', NUMERIC.has(c) || typeof row[c] === 'number' ? 'po-num' : null, row[c]);
+        if (c === 'Requirement') td.className = 'po-name';
+        tr.appendChild(td);
+      }
+      const total = ['Compliant', 'Expiring Soon', 'Expired', 'Requires Review', 'Missing']
+        .reduce((a, c) => a + (+row[c] || 0), 0);
+      const bar = el('div', 'po-bar');
+      const segs = [['Compliant', 'ok'], ['Expiring Soon', 'warn'], ['Expired', 'bad'],
+                    ['Requires Review', 'review'], ['Missing', 'gone']];
+      for (const [c, v] of segs) {
+        const n = +row[c] || 0;
+        if (!n) continue;
+        const s = el('span');
+        s.style.width = `${(n / total) * 100}%`;
+        s.style.background = `var(--${v})`;
+        s.title = `${c}: ${n}`;
+        bar.appendChild(s);
+      }
+      const td = el('td'); td.appendChild(bar); tr.appendChild(td);
+      tbody.appendChild(tr);
+    }
+    table.appendChild(tbody);
+  }
+
+  function statusCell(value) {
+    const g = glyphOf(value);
+    const td = el('td', g ? STATUS_CLASS[g] : null);
+    td.textContent = value == null ? '' : String(value);
+    return td;
+  }
+
+  function scoreCell(value) {
+    const td = el('td', 'po-num');
+    const n = Number(value);
+    if (!Number.isFinite(n)) { td.textContent = '—'; return td; }
+    const box = el('span', 'po-score');
+    const meter = el('span', 'po-meter');
+    const fill = el('i');
+    fill.style.width = `${Math.max(0, Math.min(100, n))}%`;
+    meter.appendChild(fill);
+    box.appendChild(el('span', null, `${n}%`));
+    box.appendChild(meter);
+    td.appendChild(box);
+    return td;
+  }
+
+  function renderStaff() {
+    const d = dash.data('staff_compliance');
+    const table = $('staff-table');
+    clear(table);
+    if (d.status !== 'ok' || !d.data.length) {
+      table.appendChild(el('caption', 'po-ph',
+        d.status === 'loading' ? 'Loading staff register…' : (d.message || '—')));
+      $('staff-count').textContent = '';
+      return;
+    }
+    table.setAttribute('data-source', 'staff_compliance');
+    table.setAttribute('data-row-key', 'Staff Name');
+
+    const present = COLS.filter((c) => c in d.data[0]);
+    const thead = el('thead'); const hr = el('tr');
+    for (const c of present) {
+      const th = el('th', sortCol === c ? 'po-sorted' : null);
+      th.setAttribute('data-field', c);
+      th.appendChild(document.createTextNode(c + (sortCol === c ? (sortDir > 0 ? ' ▲' : ' ▼') : '')));
+      if (ONE_TIME.includes(c)) th.appendChild(el('span', 'po-track', 'one-time'));
+      else if (window.PO.RENEWAL.includes(c)) th.appendChild(el('span', 'po-track', 'renewal'));
+      th.addEventListener('click', () => {
+        if (sortCol === c) sortDir = -sortDir; else { sortCol = c; sortDir = 1; }
+        renderStaff();
+      });
+      hr.appendChild(th);
+    }
+    thead.appendChild(hr); table.appendChild(thead);
+
+    const rows = d.data.slice().sort((a, b) => {
+      const av = a[sortCol], bv = b[sortCol];
+      if (NUMERIC.has(sortCol)) return ((+av || 0) - (+bv || 0)) * sortDir;
+      const ag = glyphOf(av), bg = glyphOf(bv);
+      if (ag && bg) {
+        const d2 = ORDER.indexOf(ag) - ORDER.indexOf(bg);
+        if (d2) return d2 * sortDir;
+      }
+      return String(av ?? '').localeCompare(String(bv ?? '')) * sortDir;
+    });
+
+    const tbody = el('tbody');
+    for (const row of rows) {
+      const tr = el('tr');
+      for (const c of present) {
+        let td;
+        if (c === 'Staff Name') { td = el('td', 'po-name', row[c]); }
+        else if (c === 'Compliance Score (%)') { td = scoreCell(row[c]); }
+        else if (c === 'Notes') { td = el('td', 'po-notes', row[c]); }
+        else { td = statusCell(row[c]); }
+        tr.appendChild(td);
+      }
+      tbody.appendChild(tr);
+    }
+    table.appendChild(tbody);
+    $('staff-count').textContent = `${rows.length} staff · sorted by ${sortCol}`;
+  }
+
+  function renderMeta() {
+    const d = dash.data('staff_compliance');
+    const bits = ['PlusOne Mentoring · NDIS provider 4050002983'];
+    if (d.meta && d.meta.updatedAt) bits.push(`as at ${d.meta.updatedAt}`);
+    $('asof').textContent = bits.join(' · ');
+  }
+
+  renderLegend();
+  dash.onData(() => { renderTotals(); renderRequirements(); renderStaff(); renderMeta(); });
+})();
+</script>
