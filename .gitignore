@@ -1,0 +1,3 @@
+# Raw API pulls may contain more than the dashboard renders. Never committed.
+data/raw/
+node_modules/

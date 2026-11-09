@@ -1,0 +1,14 @@
+{
+  "name": "plusone-compliance-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Staff compliance dashboard and monthly follow-up reporting for PlusOne Mentoring (NDIS provider 4050002983).",
+  "main": "src/pipeline.js",
+  "scripts": {
+    "test": "node test/index.js",
+    "build": "node src/pipeline.js && node src/export.js",
+    "report": "node src/report/monthly.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "UNLICENSED"
+}
