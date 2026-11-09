@@ -32,16 +32,23 @@ const DOC_EXTENSIONS = new Set([
  * more specific patterns are listed before more general ones.
  */
 const COMPLIANCE_PATTERNS = [
-  ['orientation',       /(worker[\s_-]*orientation|ndis[\s_-]*orientation|induction[\s_-]*module)/i],
-  ['ndis_worker_check', /(ndis[\s_-]*worker[\s_-]*(check|screen)|ndiswc|worker[\s_-]*screening|ndis[\s_-]*check)/i],
-  ['wwcc',              /(wwcc|working[\s_-]*with[\s_-]*children|\bwwc\b|dhs[\s_-]*screening)/i],
-  ['police',            /(police[\s_-]*check|police[\s_-]*clearance|npc\b|national[\s_-]*police|criminal[\s_-]*history)/i],
+  ['orientation',       /(worker[\s_-]*orientation|ndis[\s_-]*orientation|induction[\s_-]*module|new[\s_-]*worker)/i],
+  ['ndis_worker_check', /(ndis[\s_-]*worker[\s_-]*(check|screen)|ndiswc|worker[\s_-]*screening|ndis[\s_-]*check|worker[\s_-]*check)/i],
+  // DHS issues the WWCC clearance as an "entitlement to work with children" letter.
+  ['wwcc',              /(wwcc|working[\s_-]*with[\s_-]*children|\bwwc\b|dhs[\s_-]*screening|entitlement[\s_-]*work)/i],
+  // Police checks arrive from the AFP/DHS broker as `report_<surname>_<digits>-<digits>.pdf`,
+  // and occasionally as an NCC (national criminal check) history certificate. Neither
+  // contains the word "police", so matching on that alone misses most of them.
+  ['police',            /(police[\s_-]*check|police[\s_-]*clearance|npc\b|national[\s_-]*police|criminal[\s_-]*history|\bncc\b|history[\s_-]*check|report[_\s-][A-Za-z'-]+[_\s-]\d{5,})/i],
   ['infection',         /(infection[\s_-]*control|basic[\s_-]*infection|infection[\s_-]*prevention)/i],
   ['first_aid',         /(first[\s_-]*aid|hltaid0?1[01]|hltaid)/i],
   ['cpr',               /(\bcpr\b|hltaid009|resuscitation)/i],
   ['registration',      /(car[\s_-]*rego|vehicle[\s_-]*rego|\brego\b|car[\s_-]*registration|vehicle[\s_-]*registration)/i],
   ['insurance',         /(insurance|comprehensive[\s_-]*car|ctp\b)/i],
   ['drivers_licence',   /(driver'?s?[\s_-]*licen[cs]e|drivers?[\s_-]*lic|\bdl[\s_-]*card\b)/i],
+  // Last resort: a bare "licence" in a staff compliance folder is a driver's
+  // licence. Listed last so every more specific pattern wins first.
+  ['drivers_licence',   /\blicen[cs]e\b/i],
 ];
 
 /**
@@ -77,10 +84,22 @@ const IDENTITY_PATTERNS = [
  * Filenames that announce the file is not real evidence. Observed in the
  * live folders: `dummy_police_screening.pdf`, `Black.png`.
  */
-const PLACEHOLDER_NAME = /(dummy|placeholder|sample|template|untitled|^black\.|[_\s-]black\.|blank|test[_\s-]?file|screenshot)/i;
+const PLACEHOLDER_NAME = /(dummy|placeholder|sample|template|untitled|^black\.|[_\s-]black\.|blank|test[_\s-]?file)/i;
 
 /** Files that are never compliance evidence. */
-const NON_EVIDENCE = /(employee[\s_-]*handbook|employment[\s_-]*contract|employee[\s_-]*contract|profile[\s_-]*photo|headshot|\bbio\b|resume|cv\b|payslip|superannuation[\s_-]*choice|tax[\s_-]*file[\s_-]*declaration)/i;
+const NON_EVIDENCE = new RegExp([
+  'employee[\\s_-]*handbook', 'employment[\\s_-]*contract', 'employee[\\s_-]*contract',
+  'profile[\\s_-]*photo', 'headshot', '\\bbio\\b', 'resume', 'cv\\b', 'payslip',
+  'superannuation[\\s_-]*choice', 'tax[\\s_-]*file[\\s_-]*declaration',
+  // The onboarding form is a data source for dates, not evidence of any one
+  // requirement, so it should not sit in the unclassified pile.
+  'employee[\\s_-]*onboarding', 'employee[\\s_-]*details', 'tax[\\s_-]*dec',
+  // Supplementary NDIS training modules. Real certificates, but none of them
+  // evidences one of the ten tracked requirements.
+  'supporting[\\s_-]*effective[\\s_-]*communication', 'supporting[\\s_-]*safe',
+  'medication[\\s_-]*safety', 'manual[\\s_-]*handling', 'through[\\s_-]*their[\\s_-]*eyes',
+  'rrhan', 'food[\\s_-]*handling', 'wheelchair', 'hoist',
+].join('|'), 'i');
 
 function extensionOf(name) {
   const m = /\.([A-Za-z0-9]+)$/.exec(name || '');

@@ -26,15 +26,37 @@ const OUT = path.join(ROOT, 'data', 'out');
 
 function loadJSON(p) { return JSON.parse(fs.readFileSync(p, 'utf8')); }
 
+/**
+ * Load every folder index slice and de-duplicate by folder name.
+ *
+ * The slices are produced independently and their ranges can overlap, so the
+ * same folder may be indexed twice. Where two entries describe the same
+ * folder identically, one is kept silently. Where they disagree, the union of
+ * the files is kept and the conflict is reported rather than one copy
+ * quietly winning.
+ */
 function loadFolders(dir) {
   const files = fs.readdirSync(dir).filter((f) => /^folders-\d+\.json$/.test(f)).sort();
   if (!files.length) throw new Error(`No folders-N.json found in ${dir}`);
-  const all = [];
+
+  const byName = new Map();
+  const conflicts = [];
+  const sig = (list) => (list || []).map((x) => `${x.name}:${x.size}`).sort().join('|');
+
   for (const f of files) {
     const data = loadJSON(path.join(dir, f));
-    for (const folder of data.folders || []) all.push(folder);
+    for (const folder of data.folders || []) {
+      const prev = byName.get(folder.folder);
+      if (!prev) { byName.set(folder.folder, { ...folder, slices: [f] }); continue; }
+      prev.slices.push(f);
+      if (sig(prev.files) === sig(folder.files)) continue;
+      const merged = new Map();
+      for (const x of [...(prev.files || []), ...(folder.files || [])]) merged.set(`${x.name}:${x.size}`, x);
+      prev.files = [...merged.values()];
+      conflicts.push({ folder: folder.folder, slices: prev.slices.slice() });
+    }
   }
-  return { folders: all, sliceFiles: files };
+  return { folders: [...byName.values()], sliceFiles: files, duplicateConflicts: conflicts };
 }
 
 /**
@@ -57,7 +79,7 @@ function build(options = {}) {
   const today = options.today ? new Date(`${options.today}T00:00:00Z`) : new Date();
   const rawDir = options.rawDir || RAW;
   const zoho = loadJSON(path.join(rawDir, 'zoho-staff.json'));
-  const { folders, sliceFiles } = loadFolders(rawDir);
+  const { folders, sliceFiles, duplicateConflicts } = loadFolders(rawDir);
 
   const match = matchStaffToFolders(zoho.records, folders);
 
@@ -99,6 +121,7 @@ function build(options = {}) {
       unmatchedStaff: match.unmatchedStaff,
       unmatchedFolders: match.unmatchedFolders,
       ambiguous: match.ambiguous,
+      duplicateFolderConflicts: duplicateConflicts,
       lowConfidenceMatches: staff
         .filter((s) => s.matchConfidence !== null && s.matchConfidence < 90)
         .map((s) => ({ name: s.name, folders: s.folderNames, confidence: s.matchConfidence })),

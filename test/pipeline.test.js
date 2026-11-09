@@ -122,3 +122,10 @@ test('recommended actions are specific, not generic', () => {
   const seb = r.actions.find((a) => a.name === 'Seb Sobels');
   assert(/WWCC/.test(seb.action), `expected WWCC in: ${seb.action}`);
 });
+
+test('folder slices that overlap are de-duplicated', () => {
+  // Slices are produced independently and their ranges can overlap; the same
+  // folder indexed twice must not become two staff rows or double-counted files.
+  const names = ds.staff.flatMap((s) => s.folderNames);
+  equal(names.length, new Set(names).size, 'no folder may be attached twice');
+});
