@@ -49,12 +49,22 @@ test('Makenzie Pickering resolves against the verified onboarding form', () => {
   equal(m.byKey.ndis_worker_check.date, '2031-11-02');
 });
 
-test('one-time items with date and file are Compliant and carry no countdown', () => {
+test('one-time items with date and a real file are Compliant, with no countdown', () => {
   const m = by('Makenzie Pickering');
-  for (const k of ['ndis_orientation', 'police_check', 'infection_control']) {
+  for (const k of ['police_check', 'infection_control']) {
     equal(m.byKey[k].status, STATUS.COMPLIANT, k);
     equal(m.byKey[k].daysUntil, null, k);
   }
+});
+
+test('byte-identical evidence for two requirements is flagged, not accepted', () => {
+  // This fixture mirrors the live folder: the worker-check and orientation
+  // images are both exactly 369427 bytes, i.e. one file filed twice. The
+  // orientation then has no distinct evidence of its own.
+  const m = by('Makenzie Pickering');
+  equal(m.byKey.ndis_orientation.status, STATUS.REVIEW);
+  assert(/same file renamed/.test(m.byKey.ndis_orientation.reason));
+  equal(m.byKey.ndis_orientation.daysUntil, null, 'still a one-time item, so no countdown');
 });
 
 test('an expired renewal item is flagged Expired', () => {

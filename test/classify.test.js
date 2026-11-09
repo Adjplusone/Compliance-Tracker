@@ -36,7 +36,11 @@ test('classifies the real, inconsistently named folder correctly', () => {
   ]);
   equal(Object.keys(r.evidence).sort().join(','),
     'drivers_licence,first_aid,infection,ndis_worker_check,orientation,police,wwcc');
-  equal(r.rejected.length, 0);
+  // The worker-check and orientation PNGs in this real folder are both
+  // exactly 369427 bytes — one file filed under two names — so both are
+  // flagged for review rather than counted as separate evidence.
+  equal(r.rejected.length, 2);
+  assert(r.rejected.every((f) => /same file renamed/.test(f.reason)));
 });
 
 test('orientation is not misread as a worker check', () => {
@@ -71,4 +75,43 @@ test('identity documents are picked up for 100-point scoring', () => {
     { name: 'Drivers_License_X.HEIC', size: 900000 },
   ]);
   equal(r.identity.map((i) => i.key).sort().join(','), 'au_passport,drivers_licence,medicare_card');
+});
+
+// --- hardening driven by what the live folders actually contain -------------
+test('a named placeholder is rejected however large', () => {
+  const r = verifyFile({ name: 'dummy_police_screening.pdf', size: 2085 });
+  equal(r.valid, false);
+  assert(/placeholder/.test(r.reason));
+});
+test('Black.png is recognised as a placeholder', () => {
+  equal(verifyFile({ name: 'Black.png', size: 2235 }).valid, false);
+});
+test('a file too small to be a scanned document is rejected', () => {
+  const r = verifyFile({ name: 'First_Aid_Anthony_Galea.jpg', size: 780 });
+  equal(r.valid, false);
+  const r2 = verifyFile({ name: 'NDIS_Worker_Check.jfif', size: 658 });
+  equal(r2.valid, false);
+  const r3 = verifyFile({ name: 'NDIS_Worker_Check_Eli_Giddings.pdf', size: 2089 });
+  equal(r3.valid, false);
+  assert(/too small for a scanned document/.test(r3.reason));
+});
+test('the smallest genuine document observed still passes', () => {
+  // A real 21KB WWCC PDF from the live folders.
+  equal(verifyFile({ name: 'WWCC_Makenzie_Pickering.pdf', size: 21841 }).valid, true);
+});
+test('two requirements backed by byte-identical files are both flagged', () => {
+  const r = classifyFolder([
+    { name: 'NDIS_Worker_Check_X.png', size: 369427 },
+    { name: 'NDIS_Worker_Orientation_X.png', size: 369427 },
+  ]);
+  equal(r.rejected.length, 2);
+  assert(/same file renamed/.test(r.rejected[0].reason));
+});
+test('identical sizes within ONE requirement are not flagged', () => {
+  // Front and back of the same licence legitimately share a size.
+  const r = classifyFolder([
+    { name: 'Drivers_License_front.jpg', size: 90000 },
+    { name: 'Drivers_License_back.jpg', size: 90000 },
+  ]);
+  equal(r.rejected.length, 0);
 });

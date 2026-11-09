@@ -9,7 +9,18 @@
  * confidently is reported rather than silently dropped.
  */
 
-const MIN_FILE_BYTES = 1024; // below this a "document" is a stub, not evidence.
+/*
+ * Size thresholds, set from what the real folders contain.
+ *
+ * A genuine scanned certificate or licence photo runs from about 20KB upwards;
+ * the smallest real one observed is a 21KB WWCC PDF. Against that, the folders
+ * also hold files that would pass a presence-only check but are plainly not
+ * evidence: a 2,085-byte `dummy_police_screening.pdf`, a 780-byte "First Aid"
+ * JPG, and a 658-byte worker-check image. Checking only that a file exists
+ * would mark every one of those compliant.
+ */
+const MIN_FILE_BYTES = 1024;    // at or below this: a stub, not a document
+const SMALL_FILE_BYTES = 5120;  // below this: too small for a scanned document
 
 const DOC_EXTENSIONS = new Set([
   'pdf', 'png', 'jpg', 'jpeg', 'heic', 'heif', 'webp', 'gif', 'tif', 'tiff',
@@ -62,6 +73,12 @@ const IDENTITY_PATTERNS = [
   ['drivers_licence',           /(driver'?s?[\s_-]*licen[cs]e|drivers?[\s_-]*lic)/i],
 ];
 
+/**
+ * Filenames that announce the file is not real evidence. Observed in the
+ * live folders: `dummy_police_screening.pdf`, `Black.png`.
+ */
+const PLACEHOLDER_NAME = /(dummy|placeholder|sample|template|untitled|^black\.|[_\s-]black\.|blank|test[_\s-]?file|screenshot)/i;
+
 /** Files that are never compliance evidence. */
 const NON_EVIDENCE = /(employee[\s_-]*handbook|employment[\s_-]*contract|employee[\s_-]*contract|profile[\s_-]*photo|headshot|\bbio\b|resume|cv\b|payslip|superannuation[\s_-]*choice|tax[\s_-]*file[\s_-]*declaration)/i;
 
@@ -84,10 +101,16 @@ function verifyFile(file) {
   const ext = extensionOf(name);
   if (!ext) return { valid: false, reason: 'file has no extension' };
   if (!DOC_EXTENSIONS.has(ext)) return { valid: false, reason: `unsupported file type .${ext}` };
+  if (PLACEHOLDER_NAME.test(name)) {
+    return { valid: false, reason: 'filename indicates a placeholder rather than a real document' };
+  }
   const size = typeof file.size === 'number' ? file.size : null;
   if (size === null) return { valid: false, reason: 'file size unavailable' };
   if (size === 0) return { valid: false, reason: 'file is empty (0 bytes)' };
-  if (size < MIN_FILE_BYTES) return { valid: false, reason: `file is only ${size} bytes — likely a placeholder` };
+  if (size <= MIN_FILE_BYTES) return { valid: false, reason: `file is only ${size} bytes — likely a placeholder` };
+  if (size < SMALL_FILE_BYTES) {
+    return { valid: false, reason: `file is only ${size} bytes — too small for a scanned document` };
+  }
   return { valid: true, reason: null };
 }
 
@@ -126,9 +149,33 @@ function classifyFolder(files = []) {
   const unclassified = [];
   const rejected = [];
 
+  /*
+   * Two different requirements evidenced by byte-identical files are almost
+   * certainly one file copied and renamed. Observed live: a staff member whose
+   * NDIS worker check and orientation are both 2,235 bytes, the same size as a
+   * `Black.png` sitting beside them. Size is a weak signal on its own, so this
+   * only fires when the sizes collide ACROSS different requirements.
+   */
+  const byKeyAndSize = new Map();
+  for (const raw of files) {
+    const f = classifyFile(raw);
+    if (f.ignored || !f.complianceKey || typeof f.size !== 'number' || !f.size) continue;
+    const set = byKeyAndSize.get(f.size) || new Set();
+    set.add(f.complianceKey);
+    byKeyAndSize.set(f.size, set);
+  }
+  const collidingSizes = new Set(
+    [...byKeyAndSize.entries()].filter(([, keys]) => keys.size > 1).map(([size]) => size)
+  );
+
   for (const raw of files) {
     const f = classifyFile(raw);
     if (f.ignored) continue;
+
+    if (f.valid && f.complianceKey && collidingSizes.has(f.size)) {
+      f.valid = false;
+      f.reason = `identical in size (${f.size} bytes) to a different requirement's document — may be the same file renamed`;
+    }
 
     if (!f.valid) rejected.push({ name: f.name, reason: f.reason });
 
@@ -148,6 +195,8 @@ function classifyFolder(files = []) {
 
 module.exports = {
   MIN_FILE_BYTES,
+  SMALL_FILE_BYTES,
+  PLACEHOLDER_NAME,
   DOC_EXTENSIONS,
   COMPLIANCE_PATTERNS,
   IDENTITY_PATTERNS,
