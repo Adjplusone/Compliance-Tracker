@@ -372,6 +372,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -649,6 +663,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -976,7 +1004,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Alyssa Duncan"
       ],
@@ -1010,6 +1038,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -1380,6 +1422,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -1725,6 +1781,20 @@
       ],
       "notes": [
         "File failed verification: NDIS_Worker_Check_Ben_Lucas.inetloc (.inetloc file cannot be verified automatically — check manually)"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -2010,7 +2080,21 @@
       },
       "unclassifiedFiles": [],
       "rejectedFiles": [],
-      "notes": []
+      "notes": [],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
+      ]
     },
     {
       "staffId": "6760161000015023049",
@@ -2287,6 +2371,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -2638,6 +2736,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -2965,7 +3077,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Brodie Wills"
       ],
@@ -2999,6 +3111,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -3357,7 +3483,21 @@
       },
       "unclassifiedFiles": [],
       "rejectedFiles": [],
-      "notes": []
+      "notes": [],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
+      ]
     },
     {
       "staffId": "6760161000007477001",
@@ -3684,7 +3824,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Cameron Benier"
       ],
@@ -3721,6 +3861,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -4129,6 +4283,20 @@
         "File failed verification: NDIS_Worker_Orientation_Charlotte_Lange.HEIC (identical in size (70904 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: WWCC_Charlotte_Lange.eml.msg (.msg file cannot be verified automatically — check manually)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -4496,7 +4664,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Charlotte Pierson"
       ],
@@ -4536,6 +4704,20 @@
       "notes": [
         "File failed verification: NDIS_Worker_Check_Charlotte_Pierson.jfif (file is only 658 bytes — likely a placeholder)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -4897,6 +5079,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -5249,6 +5445,20 @@
       "notes": [
         "Folder matched by approximate name (confidence 60) — verify",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -5585,6 +5795,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -5952,6 +6176,20 @@
       "notes": [
         "File failed verification: NDIS_Worker_Orientation_Conor_Fielding.txt.msg (.msg file cannot be verified automatically — check manually)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -6323,6 +6561,20 @@
       "notes": [
         "Folder matched by approximate name (confidence 80) — verify",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -6695,6 +6947,20 @@
         "File failed verification: NDIS_Worker_Check_Dan_Martin.pdf (identical in size (60982 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_Dan_Martin.pdf (identical in size (60982 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -7058,6 +7324,20 @@
         "File failed verification: NDIS_Worker_Check_Eli_Giddings.pdf (file is only 2089 bytes — too small for a scanned document)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100",
         "Police Check date is in the future (2030-01-01) — likely data entry error"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -7502,6 +7782,20 @@
         "File failed verification: NDIS_Worker_Check_Ella_Luhrs.pdf (identical in size (60952 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_Ella_Luhrs.pdf (identical in size (60952 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -7874,6 +8168,20 @@
         "File failed verification: NDIS_Worker_Check_Eloise_Boesch.png (identical in size (159651 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: WWCC_Eloise_Boesch.png (identical in size (159651 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -8201,7 +8509,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Emily Haylock"
       ],
@@ -8236,6 +8544,20 @@
       "notes": [
         "Folder matched by approximate name (confidence 70) — verify",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -8627,6 +8949,20 @@
         "File failed verification: NDIS_Worker_Check_Emma_Lawson.png (identical in size (718697 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_Emma_Lawson.png (identical in size (718697 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -9006,6 +9342,20 @@
         "File failed verification: NDIS_Worker_Check_Ethan_Hearl.jpeg (identical in size (839422 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_Ethan_Hearl.jpeg (identical in size (839422 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -9283,6 +9633,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -9645,6 +10009,20 @@
         "File failed verification: NDIS_Worker_Check_George_Robertson.jpeg (identical in size (188119 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_George_Robertson.jpeg (identical in size (188119 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -9970,6 +10348,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -10313,6 +10705,20 @@
       "notes": [
         "File failed verification: NDIS_Worker_Check_Greta_Cummins.pdf (identical in size (95717 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_Greta_Cummins.pdf (identical in size (95717 bytes) to a different requirement's document — may be the same file renamed)"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -10664,6 +11070,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -10991,7 +11411,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Harry Hein"
       ],
@@ -11025,6 +11445,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -11352,7 +11786,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Henry Filsell"
       ],
@@ -11386,6 +11820,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -11758,6 +12206,20 @@
         "File failed verification: NDIS_Worker_Check_Isabeau_Bottroff.eml.msg (.msg file cannot be verified automatically — check manually)",
         "File failed verification: WWCC_Isabeau_Bottroff.eml.msg (.msg file cannot be verified automatically — check manually)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -12035,6 +12497,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -12312,6 +12788,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -12671,6 +13161,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -13013,6 +13517,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -13395,6 +13913,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -13795,6 +14327,20 @@
         "File failed verification: Basic_Infection_Jessica_Mason.jpeg (identical in size (187493 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: First_Aid_Jessica_Mason.jpeg (identical in size (187493 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -14072,6 +14618,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -14448,6 +15008,20 @@
       "notes": [
         "File failed verification: NDIS_Worker_Orientation_Joel_Flower.numbers (.numbers file cannot be verified automatically — check manually)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -14850,6 +15424,20 @@
         "File failed verification: Police_Check_Result.eml.msg (.msg file cannot be verified automatically — check manually)",
         "File failed verification: WWCC_Joel_Schneider.eml.msg (.msg file cannot be verified automatically — check manually)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -15197,6 +15785,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -15567,6 +16169,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -15937,6 +16553,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -16316,7 +16946,7 @@
       "scoreNumerator": 7,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Kaitlin Hards"
       ],
@@ -16363,6 +16993,20 @@
         "File failed verification: NDIS_Worker_Check_Kaitlin_Hards.png (identical in size (500812 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_Kaitlin_Hards.png (identical in size (500812 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -16733,6 +17377,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -17010,6 +17668,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -17337,7 +18009,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Lachlan Scherer"
       ],
@@ -17371,6 +18043,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -17706,7 +18392,21 @@
       },
       "unclassifiedFiles": [],
       "rejectedFiles": [],
-      "notes": []
+      "notes": [],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
+      ]
     },
     {
       "staffId": "6760161000006901062",
@@ -18076,6 +18776,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -18428,6 +19142,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -18798,6 +19526,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -19190,6 +19932,20 @@
         "File failed verification: Worker Check.pdf (identical in size (236213 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: WWCC_Liam_Owen-Turner.eml.msg (.msg file cannot be verified automatically — check manually)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -19467,6 +20223,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -19794,7 +20564,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Lily Jinks"
       ],
@@ -19829,6 +20599,20 @@
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100",
         "Police Check date is in the future (2026-11-10) — likely data entry error"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -20156,7 +20940,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Lochi Nolan"
       ],
@@ -20190,6 +20974,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -20564,6 +21362,20 @@
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100",
         "Infection Control date is in the future (2027-10-14) — likely data entry error"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -20906,6 +21718,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -21183,6 +22009,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -21460,6 +22300,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -21896,6 +22750,20 @@
         "File failed verification: NDIS_Worker_Check_Makenzie_Pickering.png (identical in size (369427 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_Makenzie_Pickering.png (identical in size (369427 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -22293,6 +23161,20 @@
         "File failed verification: NDIS_Worker_Check_Marcus_Petts.pdf (identical in size (174722 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_Marcus_Petts.pdf (identical in size (174722 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -22570,6 +23452,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -22954,6 +23850,20 @@
         "File failed verification: NDIS_Worker_Check_Max_Allan.pdf (identical in size (95712 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_Max_Allan.pdf (identical in size (95712 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -23310,6 +24220,20 @@
       ],
       "notes": [
         "File failed verification: Drivers_License_Milly_Yannakouros.jp2 (.jp2 file cannot be verified automatically — check manually)"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -23680,6 +24604,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -24050,6 +24988,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -24414,6 +25366,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -24708,7 +25674,21 @@
         "Support Coordination Certificate.pdf"
       ],
       "rejectedFiles": [],
-      "notes": []
+      "notes": [],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
+      ]
     },
     {
       "staffId": "6760161000008197003",
@@ -25045,7 +26025,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Nicholas Kleinig"
       ],
@@ -25079,6 +26059,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -25468,6 +26462,20 @@
         "File failed verification: NDIS_Worker_Check_Oliver_Canale.pdf (identical in size (63556 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_Oliver_Canale.pdf (identical in size (63556 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -25829,6 +26837,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -26227,6 +27249,20 @@
         "File failed verification: First_Aid_Ollie_Hewetson.png (file is only 381 bytes — likely a placeholder)",
         "File failed verification: NDIS_Worker_Orientation_Ollie_Hewetson.png (file is only 381 bytes — likely a placeholder)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -26611,6 +27647,20 @@
         "File failed verification: Basic_Infection_Paige_Argent.pdf (identical in size (16199 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: First_Aid_Paige_Argent.pdf (identical in size (16199 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -26902,7 +27952,21 @@
       },
       "unclassifiedFiles": [],
       "rejectedFiles": [],
-      "notes": []
+      "notes": [],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
+      ]
     },
     {
       "staffId": "6760161000000794029",
@@ -27228,7 +28292,21 @@
         "IMG_9441.HEIC"
       ],
       "rejectedFiles": [],
-      "notes": []
+      "notes": [],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
+      ]
     },
     {
       "staffId": "6760161000012836001",
@@ -27608,6 +28686,20 @@
       "notes": [
         "File failed verification: Drivers_License_Seth_Pascoe.jpeg (identical in size (1717364 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: Police_Check_Seth_Pascoe.jpeg (identical in size (1717364 bytes) to a different requirement's document — may be the same file renamed)"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -27885,6 +28977,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -28255,6 +29361,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -28634,6 +29754,20 @@
         "File failed verification: NDIS_Worker_Check_Sophie_Leis.png (identical in size (608883 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_Sophie_Leis.png (identical in size (608883 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -28911,6 +30045,20 @@
       "rejectedFiles": [],
       "notes": [
         "No SharePoint folder located — document evidence unverified"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -29281,6 +30429,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -29608,7 +30770,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Tayla Curnow"
       ],
@@ -29642,6 +30804,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -30043,6 +31219,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -30403,6 +31593,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -30792,6 +31996,20 @@
         "File failed verification: NDIS_Worker_Orientation_Tom_Herbert.jpeg (identical in size (220985 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: WWCC_Tom_Herbert.jpeg (identical in size (220985 bytes) to a different requirement's document — may be the same file renamed)",
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -31077,7 +32295,21 @@
       },
       "unclassifiedFiles": [],
       "rejectedFiles": [],
-      "notes": []
+      "notes": [],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
+      ]
     },
     {
       "staffId": "6760161000008739002",
@@ -31404,6 +32636,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -31731,7 +32977,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Trent Hutchinson"
       ],
@@ -31765,6 +33011,20 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -32117,6 +33377,20 @@
         "File failed verification: NDIS_Worker_Check_Will_Heath.png (identical in size (23306 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: NDIS_Worker_Orientation_Will_Heath.png (identical in size (23306 bytes) to a different requirement's document — may be the same file renamed)",
         "File failed verification: WWCC_Will_Heath.png (identical in size (23306 bytes) to a different requirement's document — may be the same file renamed)"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
     },
     {
@@ -32426,7 +33700,21 @@
         "TFN_declaration_form_N3092 (1) (1) (2)-2.pdf"
       ],
       "rejectedFiles": [],
-      "notes": []
+      "notes": [],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
+      ]
     },
     {
       "staffId": "6760161000005315001",
@@ -32753,7 +34041,7 @@
       "scoreNumerator": 6,
       "excluded": [],
       "expiryAlerts": [],
-      "followUpRequired": true,
+      "followUpRequired": false,
       "folderNames": [
         "Zhoe McGinty"
       ],
@@ -32787,7 +34075,51 @@
       "rejectedFiles": [],
       "notes": [
         "100-point ID: 40/100 from filed evidence — 60 points short of 100"
+      ],
+      "systemicExcluded": [
+        "infection_control",
+        "vehicle_registration",
+        "vehicle_insurance",
+        "cpr"
+      ],
+      "actionableItems": [
+        "ndis_worker_check",
+        "ndis_orientation",
+        "wwcc",
+        "police_check",
+        "drivers_licence",
+        "first_aid"
       ]
+    }
+  ],
+  "systemicGaps": [
+    {
+      "key": "infection_control",
+      "label": "Infection Control",
+      "absent": 83,
+      "total": 93,
+      "percent": 89
+    },
+    {
+      "key": "vehicle_registration",
+      "label": "Vehicle Registration",
+      "absent": 92,
+      "total": 93,
+      "percent": 99
+    },
+    {
+      "key": "vehicle_insurance",
+      "label": "Vehicle Insurance",
+      "absent": 93,
+      "total": 93,
+      "percent": 100
+    },
+    {
+      "key": "cpr",
+      "label": "CPR",
+      "absent": 93,
+      "total": 93,
+      "percent": 100
     }
   ],
   "reconciliation": {
@@ -33113,7 +34445,7 @@
         "⬜": 93
       }
     },
-    "followUp": 93,
+    "followUp": 78,
     "identity": {
       "meeting": 0,
       "notMeeting": 93

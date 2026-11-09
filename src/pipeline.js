@@ -75,6 +75,32 @@ function buildValues(zoho) {
   return values;
 }
 
+/**
+ * A requirement absent for nearly everyone is an organisational gap, not a
+ * per-person failing. CPR and Vehicle Insurance are recorded for nobody;
+ * counting those against all 93 staff puts everyone on the follow-up list and
+ * buries the people who genuinely need chasing this month.
+ *
+ * Exported so the dashboard and the monthly email share one definition.
+ */
+const SYSTEMIC_THRESHOLD = 0.8;
+
+function findSystemicGaps(staff) {
+  const gaps = [];
+  for (const req of REQUIREMENTS) {
+    const absent = staff.filter((s) => {
+      const i = s.byKey[req.key];
+      return i.status === STATUS.MISSING || (i.status === STATUS.REVIEW && !i.date);
+    }).length;
+    const share = staff.length ? absent / staff.length : 0;
+    if (share >= SYSTEMIC_THRESHOLD) {
+      gaps.push({ key: req.key, label: req.label, absent, total: staff.length,
+                  percent: Math.round(share * 100) });
+    }
+  }
+  return gaps;
+}
+
 function build(options = {}) {
   const today = options.today ? new Date(`${options.today}T00:00:00Z`) : new Date();
   const rawDir = options.rawDir || RAW;
@@ -126,10 +152,24 @@ function build(options = {}) {
 
   staff.sort((a, b) => a.name.localeCompare(b.name));
 
+  // Re-derive follow-up once the organisation-wide gaps are known, so the
+  // dashboard tile and the email agree on who needs chasing.
+  const systemicGaps = findSystemicGaps(staff);
+  const systemicKeys = new Set(systemicGaps.map((g) => g.key));
+  for (const s of staff) {
+    s.systemicExcluded = [...systemicKeys];
+    s.actionableItems = s.items.filter((i) => !systemicKeys.has(i.key)).map((i) => i.key);
+    s.followUpRequired = s.items.some((i) =>
+      !systemicKeys.has(i.key) &&
+      (i.status === STATUS.EXPIRED || i.status === STATUS.EXPIRING ||
+       i.status === STATUS.MISSING || i.status === STATUS.REVIEW));
+  }
+
   const dataset = {
     generatedAt: today.toISOString().slice(0, 10),
     source: { zohoPulledAt: zoho.pulledAt, zohoCount: zoho.count, staffEvaluated: staff.length, folderSlices: sliceFiles, folderCount: folders.length },
     staff,
+    systemicGaps,
     reconciliation: {
       zohoRecords: zoho.records.length,
       excludedTestRecords,
@@ -201,4 +241,4 @@ if (require.main === module) {
   console.log(`  needing follow-up: ${dataset.summary.followUp}`);
 }
 
-module.exports = { build, buildValues, summarise };
+module.exports = { build, buildValues, summarise, findSystemicGaps, SYSTEMIC_THRESHOLD };

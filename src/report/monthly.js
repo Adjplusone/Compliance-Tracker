@@ -104,7 +104,7 @@ function findSystemicGaps(staff) {
 
 function build(dataset) {
   const staff = dataset.staff;
-  const systemic = findSystemicGaps(staff);
+  const systemic = dataset.systemicGaps || findSystemicGaps(staff);
   const systemicKeys = new Set(systemic.map((g) => g.key));
   /** Items a named individual can actually be chased for this month. */
   const actionable = (s) => s.items.filter((i) => !systemicKeys.has(i.key));

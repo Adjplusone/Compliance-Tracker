@@ -68,7 +68,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -212,7 +212,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -260,7 +260,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -308,7 +308,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "File failed verification: NDIS_Worker_Check_Charlotte_Pierson.jfif (file is only 658 bytes — likely a placeholder) | 100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -548,7 +548,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "Folder matched by approximate name (confidence 70) — verify | 100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -740,7 +740,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -764,7 +764,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -1100,7 +1100,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 70,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "File failed verification: NDIS_Worker_Check_Kaitlin_Hards.png (identical in size (500812 bytes) to a different requirement's document — may be the same file renamed) | File failed verification: NDIS_Worker_Orientation_Kaitlin_Hards.png (identical in size (500812 bytes) to a different requirement's document — may be the same file renamed) | 100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -1172,7 +1172,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -1340,7 +1340,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "100-point ID: 40/100 from filed evidence — 60 points short of 100 | Police Check date is in the future (2026-11-10) — likely data entry error"
   },
   {
@@ -1364,7 +1364,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -1700,7 +1700,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -2012,7 +2012,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -2156,7 +2156,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "100-point ID: 40/100 from filed evidence — 60 points short of 100"
   },
   {
@@ -2228,7 +2228,7 @@
     "ID Documents Expired": "No",
     "Compliance Score (%)": 60,
     "Expiry Alerts": "None",
-    "Follow-up Required": "Yes",
+    "Follow-up Required": "No",
     "Notes": "100-point ID: 40/100 from filed evidence — 60 points short of 100"
   }
 ]

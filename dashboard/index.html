@@ -128,6 +128,11 @@
 .po-key { display: inline-flex; align-items: center; gap: 5px; }
 .po-dot { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
 
+.po-banner { margin: 0; font-size: 12.5px; color: var(--fg); background: var(--surface);
+  border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px;
+  padding: 11px 14px; line-height: 1.55; }
+.po-banner b { font-family: var(--display); font-weight: 600; }
+
 .po-note { font-size: 12px; color: var(--muted); padding: 11px 16px; border-top: 1px solid var(--line);
   background: var(--surface-2); border-radius: 0 0 9px 9px; }
 .po-note strong { color: var(--fg); font-weight: 600; }
@@ -147,6 +152,8 @@
   <div class="po-rule"></div>
 
   <section class="po-tiles" id="totals"></section>
+
+  <p class="po-banner" id="systemic" hidden></p>
 
   <section class="po-card" id="requirements">
     <div class="po-card-h">
@@ -233,8 +240,9 @@ dash.calc('total_no_expiry', {
 dash.calc('total_id_short', {
   inputs: ['staff_compliance'],
   title: '100-point ID not evidenced',
-  description: 'Staff whose filed identification documents total under 100 points, or who have no Primary document on file. Indicates evidence is not filed, not that identity was unverified.',
-  fn: (staff) => staff.filter((r) => r['Meets 100 Point Requirement'] === 'No').length,
+  description: 'Staff with some identification filed but under 100 points, or with no Primary document. Counts only staff who have filed something, since a staff member with nothing on file is an organisation-wide gap rather than an individual one. A shortfall means the evidence is not filed, not that identity was unverified.',
+  fn: (staff) => staff.filter((r) =>
+    r['Meets 100 Point Requirement'] === 'No' && Number(r['Total ID Points']) > 0).length,
 });
 </script>
 
@@ -259,7 +267,7 @@ dash.calc('total_id_short', {
     { id: 'total_expired',   label: 'Have an expired item',      mood: 'is-bad' },
     { id: 'total_expiring',  label: 'Expiring within 90 days',   mood: 'is-warn' },
     { id: 'total_no_expiry', label: 'Renewal date not recorded', mood: 'is-rev' },
-    { id: 'total_id_short',  label: '100-point ID not on file',  mood: 'is-rev' },
+    { id: 'total_id_short',  label: '100-point ID incomplete',    mood: 'is-rev' },
   ];
 
   function renderTotals() {
@@ -418,6 +426,27 @@ dash.calc('total_id_short', {
     $('staff-count').textContent = `${rows.length} staff · sorted by ${sortCol}`;
   }
 
+  function renderSystemic() {
+    const d = dash.data('requirement_tally');
+    const box = $('systemic');
+    if (d.status !== 'ok' || !d.data.length) { box.hidden = true; return; }
+    const total = (row) => ['Compliant', 'Expiring Soon', 'Expired', 'Requires Review', 'Missing']
+      .reduce((a, c) => a + (+row[c] || 0), 0);
+    const gaps = d.data.filter((row) => {
+      const t = total(row);
+      return t > 0 && ((+row.Missing || 0) + (+row['Requires Review'] || 0)) / t >= 0.8;
+    });
+    clear(box);
+    if (!gaps.length) { box.hidden = true; return; }
+    box.hidden = false;
+    box.appendChild(el('b', null, 'Organisation-wide gaps. '));
+    box.appendChild(document.createTextNode(
+      `${gaps.map((g) => g.Requirement).join(', ')} ${gaps.length === 1 ? 'is' : 'are'} unrecorded for ` +
+      `at least 80% of staff. That points to a gap in how the information is captured rather than to ` +
+      `individual omissions, so these are excluded from the follow-up count above and chased as a ` +
+      `process change rather than person by person.`));
+  }
+
   function renderMeta() {
     const d = dash.data('staff_compliance');
     const bits = ['PlusOne Mentoring · NDIS provider 4050002983'];
@@ -426,6 +455,6 @@ dash.calc('total_id_short', {
   }
 
   renderLegend();
-  dash.onData(() => { renderTotals(); renderRequirements(); renderStaff(); renderMeta(); });
+  dash.onData(() => { renderTotals(); renderSystemic(); renderRequirements(); renderStaff(); renderMeta(); });
 })();
 </script>
