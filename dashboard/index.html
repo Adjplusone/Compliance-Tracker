@@ -108,17 +108,22 @@
   border: 1px solid var(--line); background: var(--surface-2); color: var(--fg); min-width: 0; flex: 1 1 160px; }
 .po-search:focus-visible { outline: 2px solid var(--brand-2); outline-offset: 1px; }
 
-.po-scroll { overflow-x: auto; }
+/* The table scrolls inside its own box rather than pushing the page wider.
+   Without a height cap the horizontal scrollbar sits below all 93 rows, so
+   reaching it means scrolling to the bottom of the page first. */
+.po-scroll { overflow: auto; max-height: min(68vh, 660px); overscroll-behavior: contain; }
+.po-scroll--short { max-height: min(50vh, 440px); }
 .po-table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
 .po-table th, .po-table td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--line);
   white-space: nowrap; vertical-align: top; }
 .po-table thead th { position: sticky; top: 0; background: var(--surface-2); font-family: var(--display);
   font-weight: 600; font-size: 11px; letter-spacing: 0.03em; text-transform: uppercase;
-  color: var(--muted); z-index: 1; cursor: pointer; user-select: none; }
+  color: var(--muted); z-index: 2; cursor: pointer; user-select: none; }
+.po-table thead th:first-child { left: 0; z-index: 3; }
 .po-table thead th:hover { color: var(--fg); }
 .po-table thead th.po-sorted { color: var(--brand-2); }
 .po-table tbody tr:hover { background: var(--surface-2); }
-.po-name { font-weight: 600; position: sticky; left: 0; background: var(--surface); }
+.po-name { font-weight: 600; position: sticky; left: 0; background: var(--surface); z-index: 1; }
 .po-table tbody tr:hover .po-name { background: var(--surface-2); }
 .po-track { font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted);
   font-weight: 400; display: block; margin-top: 2px; }
@@ -175,7 +180,7 @@
   <details class="po-card" id="requirements">
     <summary>Every requirement in detail <span class="po-card-n">Ten requirements, status by status</span></summary>
     <div class="po-legend" id="legend"></div>
-    <div class="po-scroll"><table class="po-table" id="req-table"></table></div>
+    <div class="po-scroll po-scroll--short"><table class="po-table" id="req-table"></table></div>
   </details>
 
   <section class="po-card" id="staff">
@@ -207,9 +212,14 @@ window.PO = (function () {
   const RENEWAL = ['NDIS Worker Check', 'WWCC', "Driver's Licence", 'First Aid', 'CPR',
                    'Vehicle Registration', 'Vehicle Insurance'];
   const CATEGORY_COLS = ['Screening & Checks', 'Training & Certification', 'Driving & Vehicle'];
-  const TAIL = ['100 Point ID Status', 'Compliance Score (%)', 'Follow-up Required', 'Notes'];
+  // Notes is deliberately absent from the summary: it is the widest column by
+  // far and forces the table sideways. It stays in the full view and the CSV.
+  const TAIL = ['100 Point ID Status', 'Compliance Score (%)', 'Follow-up Required'];
 
   const SUMMARY_COLS = ['Staff Name', 'Status', ...CATEGORY_COLS, ...TAIL];
+  // On a phone even the summary cannot fit, so drop the two columns the
+  // filters already express and keep the categories, which are the point.
+  const NARROW_COLS = ['Staff Name', ...CATEGORY_COLS, '100 Point ID Status', 'Compliance Score (%)'];
   const FULL_COLS = ['Staff Name', 'Status', ...ONE_TIME, ...RENEWAL,
                      '100 Point ID Status', 'Compliance Score (%)', 'Expiry Alerts',
                      'Follow-up Required', 'Notes'];
@@ -256,7 +266,7 @@ window.PO = (function () {
         r['Meets 100 Point Requirement'] === 'No' && Number(r['Total ID Points']) > 0 },
   ];
 
-  return { ONE_TIME, RENEWAL, CATEGORY_COLS, SUMMARY_COLS, FULL_COLS, NUMERIC,
+  return { ONE_TIME, RENEWAL, CATEGORY_COLS, SUMMARY_COLS, NARROW_COLS, FULL_COLS, NUMERIC,
            STATUS_CLASS, STATUS_VAR, STATUS_NAME, ORDER, FILTERS, glyphOf, requirementCells };
 })();
 </script>
@@ -307,7 +317,7 @@ dash.calc('total_id_short', {
 (function () {
   const PO = window.PO;
   const { NUMERIC, STATUS_CLASS, STATUS_VAR, STATUS_NAME, ORDER, ONE_TIME, RENEWAL,
-          CATEGORY_COLS, SUMMARY_COLS, FULL_COLS, FILTERS, glyphOf } = PO;
+          CATEGORY_COLS, SUMMARY_COLS, NARROW_COLS, FULL_COLS, FILTERS, glyphOf } = PO;
   const $ = (id) => document.getElementById(id);
   const clear = (el) => { while (el.firstChild) el.removeChild(el.firstChild); };
   const el = (tag, cls, text) => {
@@ -315,6 +325,16 @@ dash.calc('total_id_short', {
     if (cls) n.className = cls;
     if (text != null) n.textContent = String(text); // never innerHTML: data is untrusted
     return n;
+  };
+
+  /** Shorter headings for the register; the full name stays in the tooltip. */
+  const SHORT_HEAD = {
+    'Screening & Checks': 'Screening',
+    'Training & Certification': 'Training',
+    'Driving & Vehicle': 'Driving',
+    '100 Point ID Status': '100-point ID',
+    'Compliance Score (%)': 'Score',
+    'Follow-up Required': 'Follow-up',
   };
 
   let sortCol = 'Staff Name';
@@ -561,17 +581,20 @@ dash.calc('total_id_short', {
     table.setAttribute('data-source', 'staff_compliance');
     table.setAttribute('data-row-key', 'Staff Name');
 
-    const wanted = showAllCols ? FULL_COLS : SUMMARY_COLS;
+    const narrow = typeof window !== 'undefined' && window.innerWidth < 620;
+    const wanted = showAllCols ? FULL_COLS : (narrow ? NARROW_COLS : SUMMARY_COLS);
     const present = wanted.filter((c) => c in d.data[0]);
 
     const thead = el('thead'); const hr = el('tr');
     for (const c of present) {
       const th = el('th', sortCol === c ? 'po-sorted' : null);
       th.setAttribute('data-field', c);
-      th.appendChild(document.createTextNode(c + (sortCol === c ? (sortDir > 0 ? ' ▲' : ' ▼') : '')));
+      const short = SHORT_HEAD[c] || c;
+      th.appendChild(document.createTextNode(short + (sortCol === c ? (sortDir > 0 ? ' ▲' : ' ▼') : '')));
       if (ONE_TIME.includes(c)) th.appendChild(el('span', 'po-track', 'one-time'));
       else if (RENEWAL.includes(c)) th.appendChild(el('span', 'po-track', 'renewal'));
       else if (CATEGORY_COLS.includes(c)) th.appendChild(el('span', 'po-track', 'compliant / tracked'));
+      th.title = c;
       th.addEventListener('click', () => {
         if (sortCol === c) sortDir = -sortDir; else { sortCol = c; sortDir = 1; }
         renderStaff();
@@ -645,6 +668,17 @@ dash.calc('total_id_short', {
   });
 
   $('search').addEventListener('input', (e) => { search = e.target.value; renderStaff(); });
+
+  // The column set depends on viewport width, so follow a resize.
+  let resizeTimer = null;
+  let lastNarrow = window.innerWidth < 620;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      const nowNarrow = window.innerWidth < 620;
+      if (nowNarrow !== lastNarrow) { lastNarrow = nowNarrow; renderStaff(); }
+    }, 150);
+  });
 
   renderLegend();
   dash.onData(() => {
